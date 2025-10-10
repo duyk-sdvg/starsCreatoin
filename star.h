@@ -3,17 +3,33 @@
 
 #ifndef STAR_H
 #define STAR_H
-const int dim = 2;
+const int dim = 2;//размерность
 const int numStars = 300;
 const int borderMassC = 10;
 const double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000;
 const double massSun   = 1.98892e30,
              massJup   = 1898.6e24,
+             massSaturn = 5.683e26,
+             massNeptun = 1.024e26,
              massUran  = 86.832e24,
              massEarth = 5.9742e24,
-             massVenus = 4.867e24;
-const double borderMass[] = {borderMassC*massEarth, borderMassC*massUran, borderMassC*massJup, borderMassC*massSun};
-const QColor colStar[] = {Qt::cyan, Qt::darkGreen, Qt::magenta, Qt::yellow, Qt::white};
+             massVenus = 4.867e24,
+             massMarc = 6.417e23,
+             massMercury = 3.301e23,
+             massPluton = 1.309e22;
+
+const double borderMass[] = {borderMassC*massPluton, borderMassC*massMercury,
+                             borderMassC*massMarc, borderMassC*massVenus,
+                             borderMassC*massEarth, borderMassC*massUran,
+                             borderMassC*massNeptun, borderMassC*massSaturn,
+                             borderMassC*massJup, borderMassC*massSun};
+
+const QColor colStar[] = {Qt::cyan, Qt::green,
+                          Qt::darkGreen, Qt::magenta,
+                          Qt::blue, Qt::darkBlue,
+                          Qt::gray, Qt::red,
+                          Qt::darkRed, Qt::yellow};
+
 const int nColor = sizeof(colStar) / sizeof(colStar[0]);
 
 class star{
@@ -25,6 +41,7 @@ public:
     double f[dim];
     QColor col;
     star(double *coord, double *speed, double mass);
+    void changing_color();
     ~star(){starCounter--;}
 };
 int star::starCounter = 0;
@@ -34,16 +51,37 @@ star::star(double *coord, double *speed, double mass){
         x[k] = coord[k];
         v[k] = speed[k];
     }
+
     m = mass;
+    changing_color();
+    //замена на функцию changing_color
+    /*
     col = colStar[nColor-1];  // не годится, если будут объединения объектов, функция намного лучше
-    for(int i = 0; i < nColor-1; ++i){
+    for(int i = 0; i < nColor-1; ++i){//распределяем цвета
+        if(m <= borderMass[i]){
+            col = colStar[i];
+            break;
+        }
+    }*/
+
+    starCounter++;
+}
+
+void star::changing_color(){
+    col = colStar[nColor-1];
+    for(int i = 0; i < nColor-1; ++i){//распределяем цвета
         if(m <= borderMass[i]){
             col = colStar[i];
             break;
         }
     }
-    starCounter++;
 }
+
+
+
+
+
+
 class galaxy{
 public:
     int num;
@@ -91,7 +129,7 @@ public:
                 }
             }
         }
-        for(int i = 0; i < num; i++){
+        for(int i = 0; i < num; i++){//подозрение на слепление обьектов
             if(stars[i]){
                 for(int j = i + 1; j < num; j++){
                     if(i != j && stars[j]){
@@ -118,7 +156,7 @@ public:
                 }
             }
         }
-        for(int i = 0; i < num; i++){
+        for(int i = 0; i < num; i++){//подозрение на изменение движения из-за гравитации
             if(stars[i]){
                 for(int j = i + 1; j < num; j++){
                     if(i != j && stars[j]){
@@ -137,7 +175,7 @@ public:
                 }
             }
         }
-        for(int i = 0; i < num; ++i){
+        for(int i = 0; i < num; ++i){//отвечает за движение
             if(stars[i]){
                 for(int k = 0; k < dim; ++k){
                     stars[i]->v[k] += dt * stars[i]->f[k] / stars[i]->m; //можно не делить на массу, а выше суммировать ускорение
