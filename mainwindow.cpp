@@ -56,9 +56,9 @@ void MainWindow::paintEvent(QPaintEvent *e) {
                  galactika->stars[i]->x[0] * coefX + centerX  < length &&
                  galactika->stars[i]->x[1] * coefX + centerX + topY0 > 0 &&
                  galactika->stars[i]->x[1] * coefX + centerX  < h) */
-                    painter.drawEllipse(galactika->stars[i]->x[0] * coefX + centerX + topX0,
+                    painter.drawEllipse(galactika->stars[i]->x[0] * coefX + centerX + topX0,//размер поля
                                         galactika->stars[i]->x[1] * coefX + centerX + topY0,
-                                        6 + 4 * !i, 6 + 4 * !i);
+                                 galactika->stars[i]->changing_size(), galactika->stars[i]->changing_size());//размер шариков
           }
       }
   }

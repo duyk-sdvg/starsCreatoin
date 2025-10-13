@@ -6,7 +6,7 @@
 const int dim = 2;//размерность
 const int numStars = 300;
 const int borderMassC = 10;
-const double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000;
+const double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000, distSumm = 1000;
 const double massSun   = 1.98892e30,
              massJup   = 1898.6e24,
              massSaturn = 5.683e26,
@@ -23,6 +23,8 @@ const double borderMass[] = {borderMassC*massPluton, borderMassC*massMercury,
                              borderMassC*massEarth, borderMassC*massUran,
                              borderMassC*massNeptun, borderMassC*massSaturn,
                              borderMassC*massJup, borderMassC*massSun};
+
+const int nborderMass = sizeof(borderMass) / sizeof(borderMass[0]);
 
 const QColor colStar[] = {Qt::cyan, Qt::green,
                           Qt::darkGreen, Qt::magenta,
@@ -41,17 +43,54 @@ public:
     double f[dim];
     QColor col;
     star(double *coord, double *speed, double mass);
+    star();//конструктор по умолчанию
     void changing_color();
+    double changing_size();
     ~star(){starCounter--;}
+
+
+
+    star* operator + (const star& star2){
+        double tmpM = this->m + star2.m, tmpX[dim], tmpV[dim];
+        for(int k = 0; k < dim; ++k){
+            tmpX[k] = (this->x[k] * this->m + star2.x[k] * star2.m)/tmpM;
+            tmpV[k] = (this->v[k] * this->m + star2.v[k] * star2.m)/tmpM;
+        }
+        //delete star2;
+        //star2 = nullptr;//пока без удоления НО нужно реализовать + нужно удолять еще и this
+
+        star* temp = new star(tmpX, tmpV, tmpM);
+
+        // temp->m = tmpM;
+        // for(int k = 0; k < dim; ++k){
+        //     temp->x[k] = tmpX[k];
+        //     temp->v[k] = tmpV[k];
+        // }
+
+        starCounter--;
+        return temp;
+
+    }
+
 };
 int star::starCounter = 0;
+
+
+star::star(){
+    for(int k = 0; k < dim; ++k){
+        x[k] = 0;
+        v[k] = 0;
+    }
+    m = 0;
+    changing_color();
+}
+
 
 star::star(double *coord, double *speed, double mass){
     for(int k = 0; k < dim; ++k){
         x[k] = coord[k];
         v[k] = speed[k];
     }
-
     m = mass;
     changing_color();
     //замена на функцию changing_color
@@ -63,7 +102,6 @@ star::star(double *coord, double *speed, double mass){
             break;
         }
     }*/
-
     starCounter++;
 }
 
@@ -77,6 +115,14 @@ void star::changing_color(){
     }
 }
 
+double star::changing_size(){
+    for(int i = 0; i < nborderMass-1; ++i){//изменение размера в зависимости от массы обьекта
+        if(m <= borderMass[i]){
+            return 6 + i + 4 * !i;
+        }
+    }
+    return 20 + 4; //если масса супер большая(больше массы солнца)
+}
 
 
 
@@ -138,8 +184,15 @@ public:
                             dCoord[k] = stars[i]->x[k] - stars[j]->x[k];
                             dist += dCoord[k] * dCoord[k];
                         }
-                        if(sqrt(dist) < distConnect){
-                            double tmpM = stars[i]->m + stars[j]->m, tmpX[dim], tmpV[dim];
+                        if(sqrt(dist) < distConnect){//
+                            //замена на перегрузку +
+
+                            stars[i] = *stars[i] + *stars[j];
+                            delete stars[j];
+                            stars[j] = nullptr;
+
+
+                            /*double tmpM = stars[i]->m + stars[j]->m, tmpX[dim], tmpV[dim];
                             for(int k = 0; k < dim; ++k){
                                 tmpX[k] = (stars[i]->x[k] * stars[i]->m + stars[j]->x[k] * stars[j]->m)/tmpM;
                                 tmpV[k] = (stars[i]->v[k] * stars[i]->m + stars[j]->v[k] * stars[j]->m)/tmpM;
@@ -150,8 +203,9 @@ public:
                             for(int k = 0; k < dim; ++k){
                                 stars[i]->x[k] = tmpX[k];
                                 stars[i]->v[k] = tmpV[k];
-                            }
+                            }*/
                         }
+
                     }
                 }
             }
