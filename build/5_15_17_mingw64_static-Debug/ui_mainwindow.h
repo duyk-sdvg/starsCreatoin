@@ -12,6 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -30,6 +32,12 @@ public:
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLineEdit *lineEdit_3;
+    QWidget *formLayoutWidget;
+    QFormLayout *formLayout;
+    QLineEdit *time_system;
+    QLineEdit *tima_calculation;
+    QLabel *label;
+    QLabel *label_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -38,7 +46,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setWindowModality(Qt::NonModal);
-        MainWindow->resize(800, 600);
+        MainWindow->resize(1287, 738);
         actionNEW = new QAction(MainWindow);
         actionNEW->setObjectName(QString::fromUtf8("actionNEW"));
         centralwidget = new QWidget(MainWindow);
@@ -55,10 +63,36 @@ public:
         lineEdit_3 = new QLineEdit(centralwidget);
         lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
         lineEdit_3->setGeometry(QRect(200, 50, 113, 21));
+        formLayoutWidget = new QWidget(centralwidget);
+        formLayoutWidget->setObjectName(QString::fromUtf8("formLayoutWidget"));
+        formLayoutWidget->setGeometry(QRect(349, 19, 241, 65));
+        formLayout = new QFormLayout(formLayoutWidget);
+        formLayout->setObjectName(QString::fromUtf8("formLayout"));
+        formLayout->setContentsMargins(0, 0, 0, 0);
+        time_system = new QLineEdit(formLayoutWidget);
+        time_system->setObjectName(QString::fromUtf8("time_system"));
+
+        formLayout->setWidget(0, QFormLayout::FieldRole, time_system);
+
+        tima_calculation = new QLineEdit(formLayoutWidget);
+        tima_calculation->setObjectName(QString::fromUtf8("tima_calculation"));
+
+        formLayout->setWidget(1, QFormLayout::FieldRole, tima_calculation);
+
+        label = new QLabel(formLayoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        formLayout->setWidget(0, QFormLayout::LabelRole, label);
+
+        label_2 = new QLabel(formLayoutWidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        formLayout->setWidget(1, QFormLayout::LabelRole, label_2);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 1287, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -77,6 +111,8 @@ public:
         actionNEW->setToolTip(QCoreApplication::translate("MainWindow", "<html><head/><body><p>new text</p></body></html>", nullptr));
 #endif // QT_CONFIG(tooltip)
         pushButtonStart->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "\320\222\321\200\320\265\320\274\321\217 \321\201\320\270\321\201\321\202\320\265\320\274\321\213 (c)", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "\320\250\320\260\320\263 \321\200\320\260\321\201\321\207\320\265\321\202\320\260", nullptr));
     } // retranslateUi
 
 };

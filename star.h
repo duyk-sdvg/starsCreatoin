@@ -69,8 +69,18 @@ public:
 
         starCounter--;
         return temp;
-
     }
+
+    star(const star &other){//конструктор копирования
+        this->m = other.m;
+        this-> col = other.col;
+        for(int i = 0; i < dim; i++){
+            this->x[i] = other.x[i];
+            this->v[i] = other.v[i];
+            this->f[i] = other.f[i];
+        }
+    }
+
 
 };
 int star::starCounter = 0;
@@ -90,6 +100,7 @@ star::star(double *coord, double *speed, double mass){
     for(int k = 0; k < dim; ++k){
         x[k] = coord[k];
         v[k] = speed[k];
+        f[k] = 0;//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
     m = mass;
     changing_color();

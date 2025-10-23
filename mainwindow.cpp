@@ -12,11 +12,26 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     connect(timer, &QTimer::timeout, this, QOverload<>::of(&MainWindow::update));
 //    connect(timer, &QTimer::timeout, this, SLOT(myTimer()));
     timer->start(1);
+
+    //таймер для отсчета системы
+    systemTtime = 0;
+    system_time = new QTimer(this);
+    connect(system_time, SIGNAL(timeout()), this, SLOT(TimerSlot()));
+    system_time->start(1000);
+    //отсчет шага системы
+    calculateTtime = 0;
+    calculate_time = new QTimer(this);
+    connect(calculate_time, SIGNAL(timeout()), this, SLOT(CalculateSlot()));
+    calculate_time->start(1);
+
+    ui->pushButtonStart->setText("Stop");
+
 }
 MainWindow::~MainWindow(){
     delete ui;
 }
-void MainWindow::buttonText(){
+
+/*void MainWindow::buttonText(){
     if(ui->pushButtonStart->text()==textB[0]){
         ui->pushButtonStart->setText(textB[1]);
         connect(timer, &QTimer::timeout, this, QOverload<>::of(&MainWindow::update));
@@ -25,6 +40,18 @@ void MainWindow::buttonText(){
         disconnect(timer, &QTimer::timeout, this, QOverload<>::of(&MainWindow::update));
     }
     return;
+}*/
+
+void MainWindow::TimerSlot()//таймер для отсчета системы
+{
+    systemTtime++;
+    ui->time_system->setText(QString::number(systemTtime));
+}
+
+void MainWindow::CalculateSlot()//отсчет шага системы
+{
+    calculateTtime++;
+    ui->tima_calculation->setText(QString::number(calculateTtime));
 }
 
 const int topX0 = 100, topY0 = 100, h = 800, length = 800;
@@ -67,4 +94,24 @@ void MainWindow::paintEvent(QPaintEvent *e) {
   ui->lineEdit->setText(QString::number(star::starCounter));
   ui->lineEdit_2->setText(QString::number(galactika->stars[0]->m));
   ui->lineEdit_3->setText(QString::number(galactika->stars[0]->x[0]));
+
 }
+
+void MainWindow::on_pushButtonStart_clicked()
+{
+    flag = !flag;
+    if(flag){
+        ui->pushButtonStart->setText("Start");
+        timer->stop();
+        system_time->stop();
+        calculate_time->stop();
+    }
+    else{
+        ui->pushButtonStart->setText("Stop");
+        timer->start(1);
+        system_time->start(1000);
+        calculate_time->start(1);
+    }
+
+}
+

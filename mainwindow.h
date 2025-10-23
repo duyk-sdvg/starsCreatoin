@@ -18,15 +18,29 @@ public:
     bool ellipse = false;
     const QString textB[2] = {"Start", "Stop"};
     QTimer *timer = new QTimer(this);
+    //таймер для отсчета системы
+    QTimer *system_time;
+    int systemTtime;
+    //отсчет шага системы
+    QTimer *calculate_time;
+    int calculateTtime;
+
 
 private:
     Ui::MainWindow *ui;
+    bool flag = false;
 
 protected:
     void paintEvent(QPaintEvent *event);
 
 private slots:
-    void buttonText();
+    //void buttonText();
+
+    //
+    void TimerSlot();
+    void CalculateSlot();
+    //
+    void on_pushButtonStart_clicked();
 };
 
 #endif // MAINWINDOW_H
