@@ -32,6 +32,7 @@ private:
 
 protected:
     void paintEvent(QPaintEvent *event);
+    //void update();
 
 private slots:
     //void buttonText();
@@ -41,6 +42,8 @@ private slots:
     void CalculateSlot();
     //
     void on_pushButtonStart_clicked();
+    void on_save_Button_clicked();
+    void on_load_Button_clicked();
 };
 
 #endif // MAINWINDOW_H

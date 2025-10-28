@@ -1,0 +1,3804 @@
+numStars:
+300
+starCounter:
+292
+systemRadius:
+1e+12
+distConnect
+1e+09
+index star:
+0
+mass star
+1.98895e+30
+x star
+-7.11911e+07
+-1.70488e+07
+v star
+-2.35105
+-3.1048
+f star
+3.86499e+25
+-5.83813e+25
+index star:
+1
+mass star
+1.19484e+23
+x star
+1.03347e+13
+9.91629e+12
+v star
+631715
+606098
+f star
+-5.60055e+16
+-5.37389e+16
+index star:
+2
+mass star
+2.38968e+23
+x star
+-4.99266e+11
+3.04582e+11
+v star
+7861.45
+12853.4
+f star
+7.94156e+19
+-4.84042e+19
+index star:
+3
+mass star
+3.58452e+23
+x star
+-2.22872e+11
+-7.91764e+11
+v star
+-12267.8
+3482.97
+f star
+1.82211e+19
+6.86773e+19
+index star:
+4
+mass star
+4.77936e+23
+x star
+-6.91674e+11
+1.61725e+11
+v star
+3129.8
+13304.7
+f star
+1.22889e+20
+-2.87988e+19
+index star:
+5
+mass star
+5.9742e+23
+x star
+-1.64387e+10
+8.98078e+10
+v star
+37529.4
+6830.99
+f star
+1.74464e+21
+-9.35363e+21
+index star:
+6
+mass star
+7.16904e+23
+x star
+-8.51312e+11
+5.02219e+11
+v star
+5897.73
+9971.53
+f star
+8.43001e+19
+-4.99434e+19
+index star:
+7
+mass star
+7.92179e+25
+x star
+-1.0081e+10
+1.22445e+09
+v star
+8823.32
+112892
+f star
+1.03105e+26
+-1.14913e+24
+index star:
+8
+mass star
+9.55872e+23
+x star
+-5.80075e+11
+-1.60222e+11
+v star
+-3964.09
+14317.3
+f star
+3.37122e+20
+9.32827e+19
+index star:
+9
+mass star
+1.07536e+24
+x star
+-8.40882e+09
+4.50493e+11
+v star
+17165
+301.938
+f star
+1.33058e+19
+-7.04173e+20
+index star:
+10
+mass star
+1.19484e+24
+x star
+4.59027e+10
+-7.81834e+11
+v star
+-12996.2
+-748.017
+f star
+-1.50984e+19
+2.59231e+20
+index star:
+11
+mass star
+1.31432e+24
+x star
+-3.22661e+11
+-8.14036e+11
+v star
+-11522.5
+4600.82
+f star
+7.81977e+19
+2.18708e+20
+index star:
+12
+mass star
+1.43381e+24
+x star
+4.92718e+11
+2.19065e+11
+v star
+6366.06
+-14345
+f star
+-5.98889e+20
+-2.6678e+20
+index star:
+13
+mass star
+1.55329e+24
+x star
+4.05217e+11
+7.60999e+11
+v star
+10951.4
+-5839.82
+f star
+-1.30481e+20
+-2.45569e+20
+index star:
+14
+mass star
+1.67278e+24
+x star
+9.78532e+11
+-1.89534e+11
+v star
+-2202.47
+-11328.2
+f star
+-2.20253e+20
+4.26692e+19
+index star:
+15
+mass star
+1.79226e+24
+x star
+2.3888e+11
+1.25823e+11
+v star
+11241.8
+-19915.8
+f star
+-2.92095e+21
+-1.6805e+21
+index star:
+16
+mass star
+1.91174e+24
+x star
+3.65327e+11
+-8.79472e+10
+v star
+-4401.59
+-18276.5
+f star
+-1.74802e+21
+4.19623e+20
+index star:
+18
+mass star
+2.15071e+24
+x star
+-4.16633e+11
+-4.1137e+11
+v star
+-10588.1
+11074.3
+f star
+5.93571e+20
+6.50852e+20
+index star:
+19
+mass star
+2.2702e+24
+x star
+3.60345e+11
+3.23903e+11
+v star
+11015.6
+-12335
+f star
+-9.62616e+20
+-8.62267e+20
+index star:
+20
+mass star
+2.38968e+24
+x star
+2.74588e+11
+-3.66398e+11
+v star
+-13626.2
+-10203.8
+f star
+-9.0794e+20
+1.21176e+21
+index star:
+21
+mass star
+2.50916e+24
+x star
+-2.56801e+11
+5.41092e+11
+v star
+13454.6
+6374.77
+f star
+3.98924e+20
+-8.40196e+20
+index star:
+22
+mass star
+2.62865e+24
+x star
+-1.49439e+11
+5.52475e+11
+v star
+14710.2
+3975.33
+f star
+2.7998e+20
+-1.02868e+21
+index star:
+23
+mass star
+3.09464e+25
+x star
+-1.4733e+11
+-3.99873e+11
+v star
+-16567.8
+6108.93
+f star
+7.80816e+21
+2.12522e+22
+index star:
+24
+mass star
+2.86762e+24
+x star
+-2.29947e+11
+7.15355e+11
+v star
+12665
+4056.58
+f star
+2.08027e+20
+-6.43869e+20
+index star:
+25
+mass star
+2.9871e+24
+x star
+4.86521e+11
+-7.21215e+10
+v star
+-2408.09
+-16249.6
+f star
+-1.61989e+21
+2.40622e+20
+index star:
+26
+mass star
+3.10658e+24
+x star
+-1.29113e+11
+7.16128e+10
+v star
+14494.5
+26253.1
+f star
+1.6581e+22
+-9.1569e+21
+index star:
+27
+mass star
+3.22607e+24
+x star
+-4.32456e+09
+6.92636e+11
+v star
+13860.3
+63.6338
+f star
+8.07091e+18
+-8.97042e+20
+index star:
+28
+mass star
+3.34555e+24
+x star
+-5.60124e+11
+-7.8768e+11
+v star
+-9545.16
+6798.54
+f star
+2.76692e+20
+3.88842e+20
+index star:
+29
+mass star
+3.46504e+24
+x star
+-7.93488e+11
+-2.1322e+11
+v star
+-3292.72
+12270.8
+f star
+6.5931e+20
+1.75815e+20
+index star:
+30
+mass star
+3.58452e+24
+x star
+-7.49214e+11
+3.26197e+11
+v star
+5093.02
+11689.6
+f star
+6.54531e+20
+-2.83825e+20
+index star:
+31
+mass star
+3.704e+24
+x star
+-4.58274e+11
+5.70684e+11
+v star
+10509.6
+8426.98
+f star
+5.76679e+20
+-7.17083e+20
+index star:
+32
+mass star
+3.82349e+24
+x star
+-2.00028e+11
+-6.52074e+11
+v star
+-13320.9
+4106.75
+f star
+3.24745e+20
+1.04535e+21
+index star:
+33
+mass star
+3.94297e+24
+x star
+-5.95063e+10
+-1.07513e+11
+v star
+-28868.5
+15793.5
+f star
+1.67041e+22
+3.04183e+22
+index star:
+34
+mass star
+4.06246e+24
+x star
+-4.49301e+11
+-2.55442e+11
+v star
+-7905.62
+13940
+f star
+1.75865e+21
+1.00006e+21
+index star:
+35
+mass star
+4.18194e+24
+x star
+7.27377e+11
+-6.09904e+11
+v star
+-7608.28
+-9058.03
+f star
+-4.74766e+20
+3.96888e+20
+index star:
+36
+mass star
+4.30142e+24
+x star
+-9.52273e+10
+4.61818e+11
+v star
+16437.8
+3372.09
+f star
+5.19838e+20
+-2.5195e+21
+index star:
+37
+mass star
+4.42091e+24
+x star
+2.08381e+11
+4.05593e+11
+v star
+15180.1
+-7804.67
+f star
+-1.28805e+21
+-2.51319e+21
+index star:
+38
+mass star
+4.54039e+24
+x star
+-7.33209e+11
+-9.29738e+10
+v star
+-1674.35
+13294.8
+f star
+1.09802e+21
+1.3858e+20
+index star:
+39
+mass star
+4.65988e+24
+x star
+-5.29498e+11
+6.51299e+11
+v star
+9765.44
+7932.5
+f star
+5.56324e+20
+-6.81436e+20
+index star:
+40
+mass star
+4.77936e+24
+x star
+-1.07364e+10
+2.51443e+10
+v star
+63656.4
+28085.4
+f star
+3.51373e+23
+-7.73562e+23
+index star:
+41
+mass star
+4.89884e+24
+x star
+3.94869e+11
+3.55259e+11
+v star
+10559.2
+-11762.2
+f star
+-1.7176e+21
+-1.54511e+21
+index star:
+42
+mass star
+5.01833e+24
+x star
+4.14025e+11
+5.10793e+11
+v star
+11032.7
+-8953.95
+f star
+-9.71798e+20
+-1.19912e+21
+index star:
+43
+mass star
+5.13781e+24
+x star
+9.61436e+10
+-5.34628e+10
+v star
+-16835.9
+-30348.5
+f star
+-4.93154e+22
+2.719e+22
+index star:
+44
+mass star
+5.2573e+24
+x star
+1.8204e+11
+2.20389e+11
+v star
+16611.1
+-13734.5
+f star
+-5.44165e+21
+-6.59265e+21
+index star:
+45
+mass star
+5.37678e+24
+x star
+-4.08171e+11
+-7.27913e+11
+v star
+-10990.7
+6172.65
+f star
+5.0443e+20
+8.94977e+20
+index star:
+46
+mass star
+5.49626e+24
+x star
+2.11526e+11
+-1.37563e+11
+v star
+-12526
+-19198.2
+f star
+-9.60963e+21
+6.2496e+21
+index star:
+47
+mass star
+5.61575e+24
+x star
+3.02364e+11
+-7.47406e+11
+v star
+-11894.9
+-4816.47
+f star
+-4.2987e+20
+1.06158e+21
+index star:
+48
+mass star
+5.73523e+24
+x star
+5.15983e+11
+-1.99262e+11
+v star
+-5586.14
+-14445.9
+f star
+-2.32285e+21
+8.97875e+20
+index star:
+49
+mass star
+5.85472e+24
+x star
+-4.7881e+11
+-5.79989e+11
+v star
+-10236.6
+8467.93
+f star
+8.77441e+20
+1.06335e+21
+index star:
+50
+mass star
+5.9742e+24
+x star
+3.5634e+11
+2.52141e+11
+v star
+10049.5
+-14237.1
+f star
+-3.40361e+21
+-2.40315e+21
+index star:
+51
+mass star
+6.09368e+24
+x star
+3.0218e+11
+3.15225e+11
+v star
+12619
+-12078
+f star
+-2.9261e+21
+-3.0716e+21
+index star:
+52
+mass star
+6.21317e+24
+x star
+5.08517e+11
+3.69478e+11
+v star
+8534.28
+-11762.8
+f star
+-1.69177e+21
+-1.22951e+21
+index star:
+53
+mass star
+6.33265e+24
+x star
+4.86046e+11
+-4.97703e+11
+v star
+-9887.02
+-9641.79
+f star
+-1.21528e+21
+1.24635e+21
+index star:
+54
+mass star
+6.45214e+24
+x star
+-1.46634e+11
+-1.01114e+11
+v star
+-15547.3
+22489.2
+f star
+2.22186e+22
+1.53906e+22
+index star:
+55
+mass star
+6.57162e+24
+x star
+-6.27098e+10
+-7.46856e+10
+v star
+-28307.6
+23702.6
+f star
+5.87482e+22
+7.05955e+22
+index star:
+56
+mass star
+6.6911e+24
+x star
+9.27231e+11
+8.80661e+10
+v star
+1116
+-11880.9
+f star
+-1.02375e+21
+-9.53074e+19
+index star:
+57
+mass star
+6.81059e+24
+x star
+-2.26634e+11
+1.16265e+10
+v star
+1251.23
+24167.4
+f star
+1.75528e+22
+-8.885e+20
+index star:
+58
+mass star
+6.93007e+24
+x star
+-6.04529e+11
+-1.70798e+11
+v star
+-3984.16
+14009.4
+f star
+2.2278e+21
+6.46603e+20
+index star:
+59
+mass star
+7.04956e+24
+x star
+-5.41119e+11
+-2.53843e+11
+v star
+-6320.47
+13499.4
+f star
+2.37552e+21
+1.11571e+21
+index star:
+60
+mass star
+7.16904e+24
+x star
+-3.34224e+11
+-5.27721e+11
+v star
+-12314.5
+7811.52
+f star
+1.30466e+21
+2.06654e+21
+index star:
+61
+mass star
+7.28852e+24
+x star
+-1.1913e+11
+1.42779e+11
+v star
+20329.5
+17071.3
+f star
+1.78859e+22
+-2.15001e+22
+index star:
+62
+mass star
+7.40801e+24
+x star
+2.24601e+11
+-9.20225e+10
+v star
+-8863.22
+-21656.4
+f star
+-1.54483e+22
+6.29852e+21
+index star:
+63
+mass star
+7.52749e+24
+x star
+-1.24557e+11
+5.71093e+11
+v star
+14726.1
+3204.3
+f star
+6.23927e+20
+-2.8607e+21
+index star:
+64
+mass star
+7.64698e+24
+x star
+-6.79505e+11
+-2.94528e+11
+v star
+-5279.5
+12239.2
+f star
+1.71262e+21
+7.12735e+20
+index star:
+65
+mass star
+7.76646e+24
+x star
+6.27679e+11
+5.03136e+11
+v star
+8026.68
+-10027.5
+f star
+-1.24662e+21
+-9.98232e+20
+index star:
+66
+mass star
+7.88594e+24
+x star
+-7.98048e+11
+-4.40319e+11
+v star
+-5817.35
+10564.9
+f star
+1.10847e+21
+6.06777e+20
+index star:
+67
+mass star
+8.00543e+24
+x star
+5.88155e+11
+-3.15898e+11
+v star
+-6685.27
+-12413
+f star
+-2.10648e+21
+1.13255e+21
+index star:
+68
+mass star
+8.12491e+24
+x star
+3.05365e+11
+-7.25652e+09
+v star
+-498.907
+-20878
+f star
+-1.15645e+22
+2.58777e+20
+index star:
+69
+mass star
+8.2444e+24
+x star
+-2.31827e+11
+-8.18741e+11
+v star
+-12026.1
+3437.64
+f star
+4.07858e+20
+1.47178e+21
+index star:
+70
+mass star
+8.36388e+24
+x star
+-8.75015e+09
+-7.86749e+10
+v star
+-40782.4
+4344.59
+f star
+1.85324e+22
+1.76369e+23
+index star:
+71
+mass star
+8.48336e+24
+x star
+-3.82263e+11
+3.88572e+11
+v star
+11123.7
+10950.4
+f star
+2.65595e+21
+-2.69973e+21
+index star:
+72
+mass star
+8.60285e+24
+x star
+-3.87735e+11
+2.57252e+11
+v star
+9358.03
+14054.6
+f star
+4.40678e+21
+-2.92184e+21
+index star:
+73
+mass star
+8.72233e+24
+x star
+-7.6652e+10
+7.33854e+11
+v star
+13339.7
+1376.89
+f star
+2.19503e+20
+-2.12385e+21
+index star:
+74
+mass star
+8.84182e+24
+x star
+-3.30068e+11
+-8.08385e+11
+v star
+-11384.6
+4672.72
+f star
+5.9863e+20
+1.43009e+21
+index star:
+75
+mass star
+8.9613e+24
+x star
+-1.04771e+11
+7.22796e+10
+v star
+18300.6
+26605.1
+f star
+6.05935e+22
+-4.16073e+22
+index star:
+76
+mass star
+9.08078e+24
+x star
+4.7705e+11
+-3.7948e+11
+v star
+-9198.09
+-11561.6
+f star
+-2.54819e+21
+2.01179e+21
+index star:
+77
+mass star
+9.20027e+24
+x star
+-6.31137e+10
+6.50749e+11
+v star
+14179.9
+1370.52
+f star
+2.75199e+20
+-2.84657e+21
+index star:
+78
+mass star
+9.31975e+24
+x star
+2.25855e+11
+1.81522e+10
+v star
+1889.99
+-24131.1
+f star
+-2.40681e+22
+-1.9533e+21
+index star:
+79
+mass star
+9.43924e+24
+x star
+6.17808e+11
+2.39783e+11
+v star
+5116.87
+-13203.2
+f star
+-2.66273e+21
+-1.03788e+21
+index star:
+80
+mass star
+9.55872e+24
+x star
+-1.30539e+11
+-4.79224e+11
+v star
+-15773.4
+4306.67
+f star
+1.35026e+21
+4.96929e+21
+index star:
+81
+mass star
+9.6782e+24
+x star
+-6.82465e+11
+8.7938e+10
+v star
+1779.61
+13770.3
+f star
+2.69496e+21
+-3.52101e+20
+index star:
+82
+mass star
+3.62037e+25
+x star
+4.79613e+09
+-3.12049e+09
+v star
+-50533.3
+-133420
+f star
+-1.42667e+26
+4.69815e+25
+index star:
+83
+mass star
+9.91717e+24
+x star
+-8.2751e+11
+2.45544e+11
+v star
+3535.44
+11889.4
+f star
+1.69904e+21
+-5.02309e+20
+index star:
+84
+mass star
+1.00367e+25
+x star
+-2.09421e+11
+-3.17072e+11
+v star
+-15649.9
+10318.7
+f star
+5.06979e+21
+7.72574e+21
+index star:
+85
+mass star
+1.01561e+25
+x star
+-7.77574e+11
+-5.55649e+11
+v star
+-6847.77
+9584.88
+f star
+1.20303e+21
+8.5655e+20
+index star:
+86
+mass star
+1.02756e+25
+x star
+9.93979e+10
+8.63895e+10
+v star
+20890.9
+-23884.2
+f star
+-5.91755e+22
+-5.16432e+22
+index star:
+87
+mass star
+1.03951e+25
+x star
+1.67331e+10
+-2.25306e+10
+v star
+-53409.3
+-43598.5
+f star
+-1.08191e+24
+1.37712e+24
+index star:
+88
+mass star
+1.05146e+25
+x star
+2.75909e+10
+1.29876e+11
+v star
+30908.4
+-6297.99
+f star
+-1.62892e+22
+-7.74661e+22
+index star:
+89
+mass star
+1.06341e+25
+x star
+2.44558e+11
+-6.78884e+11
+v star
+-12762.1
+-4593.51
+f star
+-9.1968e+20
+2.55301e+21
+index star:
+90
+mass star
+1.07536e+25
+x star
+-6.46529e+11
+-2.88413e+11
+v star
+-5584.08
+12500.3
+f star
+2.59738e+21
+1.15552e+21
+index star:
+91
+mass star
+1.0873e+25
+x star
+6.15182e+10
+1.57142e+11
+v star
+26173.4
+-10150.6
+f star
+-1.83995e+22
+-4.72149e+22
+index star:
+92
+mass star
+1.09925e+25
+x star
+-3.62716e+11
+-6.03024e+10
+v star
+-3166.68
+18786.6
+f star
+1.06282e+22
+1.82909e+21
+index star:
+93
+mass star
+1.1112e+25
+x star
+-5.153e+11
+-1.07021e+11
+v star
+-3199.08
+15546.8
+f star
+5.2384e+21
+1.08085e+21
+index star:
+94
+mass star
+1.12315e+25
+x star
+1.25762e+11
+7.18487e+10
+v star
+15199.2
+-26184.9
+f star
+-6.15983e+22
+-3.5341e+22
+index star:
+95
+mass star
+1.1351e+25
+x star
+-9.56602e+09
+1.3708e+11
+v star
+30947.9
+2266.5
+f star
+5.70083e+21
+-7.96061e+22
+index star:
+96
+mass star
+1.14705e+25
+x star
+6.05886e+10
+5.70072e+11
+v star
+15144.9
+-1612.09
+f star
+-4.81221e+20
+-4.61419e+21
+index star:
+97
+mass star
+1.15899e+25
+x star
+2.87719e+11
+-1.18386e+11
+v star
+-7874.39
+-19096.4
+f star
+-1.47161e+22
+6.04738e+21
+index star:
+98
+mass star
+1.17094e+25
+x star
+-2.39776e+11
+-1.52093e+11
+v star
+-11576.4
+18282.6
+f star
+1.62903e+22
+1.0365e+22
+index star:
+99
+mass star
+1.18289e+25
+x star
+-6.76009e+11
+-3.09838e+11
+v star
+-5565.63
+12179.1
+f star
+2.58836e+21
+1.20916e+21
+index star:
+100
+mass star
+1.19484e+25
+x star
+-1.94175e+11
+-1.20595e+11
+v star
+-12805.2
+20489.9
+f star
+2.57737e+22
+1.61182e+22
+index star:
+101
+mass star
+1.20679e+25
+x star
+4.57403e+11
+-2.90833e+11
+v star
+-8405.99
+-13124.4
+f star
+-4.58552e+21
+2.98274e+21
+index star:
+102
+mass star
+1.21874e+25
+x star
+-3.0258e+11
+4.28452e+11
+v star
+13000.4
+9163.47
+f star
+3.39642e+21
+-4.8127e+21
+index star:
+103
+mass star
+1.23069e+25
+x star
+2.90737e+11
+8.42709e+11
+v star
+11532.7
+-3987.98
+f star
+-6.72524e+20
+-1.94931e+21
+index star:
+104
+mass star
+1.24263e+25
+x star
+8.91626e+11
+2.69597e+11
+v star
+3444.21
+-11442.1
+f star
+-1.82815e+21
+-5.62397e+20
+index star:
+105
+mass star
+1.25458e+25
+x star
+2.27951e+10
+-3.35506e+11
+v star
+-19847.1
+-1354.42
+f star
+-1.02215e+21
+1.47048e+22
+index star:
+106
+mass star
+1.26653e+25
+x star
+3.18144e+11
+-8.90915e+11
+v star
+-11160.4
+-3967.26
+f star
+-6.35214e+20
+1.78188e+21
+index star:
+107
+mass star
+1.27848e+25
+x star
+-3.92446e+11
+5.71712e+11
+v star
+11411.4
+7823.66
+f star
+2.0011e+21
+-2.91507e+21
+index star:
+108
+mass star
+1.29043e+25
+x star
+3.73816e+11
+-3.68873e+11
+v star
+-11200
+-11281.6
+f star
+-4.45007e+21
+4.38301e+21
+index star:
+109
+mass star
+1.30238e+25
+x star
+2.21702e+11
+5.41849e+11
+v star
+13928.7
+-5709.67
+f star
+-1.91501e+21
+-4.67263e+21
+index star:
+110
+mass star
+1.31432e+25
+x star
+9.71499e+10
+-4.24354e+11
+v star
+-17025.9
+-3885.14
+f star
+-2.06022e+21
+8.98109e+21
+index star:
+111
+mass star
+1.32627e+25
+x star
+-1.05816e+11
+-5.92128e+11
+v star
+-14622.5
+2614.66
+f star
+8.58791e+20
+4.79135e+21
+index star:
+112
+mass star
+1.33822e+25
+x star
+1.82321e+11
+1.26378e+11
+v star
+13911.1
+-20128.2
+f star
+-2.96601e+22
+-2.06104e+22
+index star:
+113
+mass star
+1.35017e+25
+x star
+-6.35241e+10
+5.29826e+10
+v star
+25486.9
+30806
+f star
+2.01831e+23
+-1.67271e+23
+index star:
+114
+mass star
+1.36212e+25
+x star
+-5.87693e+11
+-5.58825e+11
+v star
+-8810.55
+9278.96
+f star
+1.9972e+21
+1.90104e+21
+index star:
+115
+mass star
+1.37407e+25
+x star
+-4.12726e+11
+-3.32479e+11
+v star
+-9907.27
+12326.7
+f star
+5.07581e+21
+4.07483e+21
+index star:
+116
+mass star
+1.38601e+25
+x star
+-9.38741e+10
+-7.21671e+11
+v star
+-13396.7
+1757.1
+f star
+4.44376e+20
+3.45756e+21
+index star:
+117
+mass star
+1.39796e+25
+x star
+-3.83419e+11
+-5.17889e+11
+v star
+-11531.5
+8554.58
+f star
+2.66338e+21
+3.60545e+21
+index star:
+118
+mass star
+1.40991e+25
+x star
+9.34873e+11
+1.558e+11
+v star
+1928.36
+-11667.7
+f star
+-2.06838e+21
+-3.35907e+20
+index star:
+119
+mass star
+1.42186e+25
+x star
+-8.31641e+11
+-5.21511e+11
+v star
+-6164.27
+9861.36
+f star
+1.67139e+21
+1.04843e+21
+index star:
+120
+mass star
+1.43381e+25
+x star
+-3.41343e+11
+-1.34424e+11
+v star
+-6926.1
+17748.9
+f star
+1.31881e+22
+5.23022e+21
+index star:
+121
+mass star
+1.44576e+25
+x star
+-2.53821e+10
+2.38744e+11
+v star
+23389.9
+2458.15
+f star
+3.53605e+21
+-3.31236e+22
+index star:
+122
+mass star
+1.4577e+25
+x star
+-7.52033e+11
+4.99065e+11
+v star
+6709.57
+10093.9
+f star
+1.98172e+21
+-1.32273e+21
+index star:
+123
+mass star
+1.46965e+25
+x star
+-1.62419e+11
+-5.53887e+10
+v star
+-9013.24
+26328.2
+f star
+6.27732e+22
+2.14735e+22
+index star:
+124
+mass star
+1.4816e+25
+x star
+1.28269e+11
+1.67206e+11
+v star
+19988.8
+-15223
+f star
+-2.68488e+22
+-3.51011e+22
+index star:
+125
+mass star
+1.49355e+25
+x star
+-8.06869e+10
+-8.08364e+10
+v star
+-24160.7
+24047.6
+f star
+1.07158e+23
+1.08081e+23
+index star:
+126
+mass star
+1.5055e+25
+x star
+-1.00864e+10
+3.72667e+10
+v star
+56641
+15109.8
+f star
+3.67434e+23
+-1.28932e+24
+index star:
+127
+mass star
+1.51745e+25
+x star
+1.12273e+11
+1.01703e+11
+v star
+19782.5
+-22001.2
+f star
+-6.50628e+22
+-5.88006e+22
+index star:
+128
+mass star
+1.5294e+25
+x star
+-1.78011e+11
+8.0434e+10
+v star
+10740.3
+23774
+f star
+4.85662e+22
+-2.18768e+22
+index star:
+129
+mass star
+1.54134e+25
+x star
+-7.98997e+11
+4.33479e+11
+v star
+5765.57
+10591
+f star
+2.1748e+21
+-1.20942e+21
+index star:
+130
+mass star
+1.55329e+25
+x star
+1.08197e+11
+1.08144e+11
+v star
+21120.2
+-20582.4
+f star
+-6.20384e+22
+-6.26076e+22
+index star:
+131
+mass star
+1.56524e+25
+x star
+-9.41809e+11
+-4.62848e+10
+v star
+-574.471
+11850.3
+f star
+2.34166e+21
+1.14249e+20
+index star:
+132
+mass star
+1.57719e+25
+x star
+1.30986e+11
+2.18301e+11
+v star
+19572
+-11805.6
+f star
+-1.66023e+22
+-2.77433e+22
+index star:
+133
+mass star
+1.58914e+25
+x star
+4.50233e+11
+6.55404e+11
+v star
+10645.8
+-7325.16
+f star
+-1.89291e+21
+-2.75882e+21
+index star:
+134
+mass star
+1.60109e+25
+x star
+5.8991e+11
+1.84452e+10
+v star
+390.025
+-14919.3
+f star
+-6.1609e+21
+-8.6491e+19
+index star:
+135
+mass star
+1.61303e+25
+x star
+-5.12285e+11
+3.90604e+11
+v star
+8713.82
+11408
+f star
+4.11316e+21
+-3.13594e+21
+index star:
+136
+mass star
+1.62498e+25
+x star
+-3.83686e+11
+-2.17618e+11
+v star
+-8543.98
+15099.1
+f star
+9.65642e+21
+5.48223e+21
+index star:
+137
+mass star
+1.63693e+25
+x star
+3.95012e+11
+4.41061e+11
+v star
+11147
+-9998
+f star
+-4.14196e+21
+-4.62571e+21
+index star:
+138
+mass star
+1.64888e+25
+x star
+2.59109e+11
+-2.9363e+11
+v star
+-13806.1
+-12178.7
+f star
+-9.4479e+21
+1.07005e+22
+index star:
+139
+mass star
+1.66083e+25
+x star
+-4.01318e+11
+4.10733e+11
+v star
+10888.6
+10607.3
+f star
+4.68826e+21
+-4.80107e+21
+index star:
+140
+mass star
+1.67278e+25
+x star
+-4.81842e+10
+-7.5107e+09
+v star
+-8262.49
+51331.1
+f star
+9.24005e+23
+1.53826e+23
+index star:
+141
+mass star
+1.68472e+25
+x star
+-4.07469e+11
+-7.97087e+11
+v star
+-10832.5
+5553.2
+f star
+1.28107e+21
+2.49477e+21
+index star:
+142
+mass star
+1.69667e+25
+x star
+-6.35663e+10
+3.8816e+11
+v star
+18141
+2954.91
+f star
+2.36217e+21
+-1.43833e+22
+index star:
+143
+mass star
+1.70862e+25
+x star
+-3.66132e+11
+1.28081e+11
+v star
+6125.22
+17461.7
+f star
+1.42503e+22
+-4.97766e+21
+index star:
+144
+mass star
+1.72057e+25
+x star
+-2.75356e+11
+-6.92604e+11
+v star
+-12393.1
+4929.02
+f star
+1.52796e+21
+3.81951e+21
+index star:
+145
+mass star
+1.73252e+25
+x star
+1.84577e+11
+-7.68793e+10
+v star
+-9885.42
+-23805.4
+f star
+-5.30828e+22
+2.20373e+22
+index star:
+146
+mass star
+1.74447e+25
+x star
+-2.72896e+11
+2.46374e+11
+v star
+12746.6
+14101.3
+f star
+1.27398e+22
+-1.14856e+22
+index star:
+147
+mass star
+1.75641e+25
+x star
+7.50734e+10
+1.88286e+11
+v star
+23787.5
+-9484.54
+f star
+-2.09506e+22
+-5.27462e+22
+index star:
+148
+mass star
+1.76836e+25
+x star
+6.68243e+11
+1.61749e+11
+v star
+3263.03
+-13514.8
+f star
+-4.83348e+21
+-1.17803e+21
+index star:
+149
+mass star
+1.78031e+25
+x star
+2.51998e+10
+-1.24318e+10
+v star
+-28490.6
+-62343.8
+f star
+-2.70859e+24
+1.2504e+24
+index star:
+150
+mass star
+1.79226e+25
+x star
+7.44135e+10
+-1.21728e+11
+v star
+-25989.5
+-15959.5
+f star
+-6.12434e+22
+9.96094e+22
+index star:
+151
+mass star
+1.80421e+25
+x star
+4.25702e+11
+5.86695e+11
+v star
+10950.5
+-7952.56
+f star
+-2.67964e+21
+-3.69459e+21
+index star:
+152
+mass star
+1.81616e+25
+x star
+-6.52762e+11
+5.18859e+10
+v star
+1133.84
+14197
+f star
+5.61189e+21
+-4.40891e+20
+index star:
+153
+mass star
+1.82811e+25
+x star
+-2.73113e+09
+4.97983e+10
+v star
+51361
+3062.34
+f star
+6.19851e+22
+-9.73365e+23
+index star:
+154
+mass star
+1.84005e+25
+x star
+-7.23363e+11
+7.9194e+10
+v star
+1489.46
+13425.1
+f star
+4.6076e+21
+-5.02585e+20
+index star:
+155
+mass star
+1.852e+25
+x star
+-1.50789e+10
+3.71602e+11
+v star
+18871.8
+747.763
+f star
+7.22325e+20
+-1.77715e+22
+index star:
+156
+mass star
+1.86395e+25
+x star
+-1.15891e+11
+-1.24086e+11
+v star
+-20524.7
+19026.7
+f star
+5.85122e+22
+6.29245e+22
+index star:
+157
+mass star
+1.8759e+25
+x star
+2.11212e+11
+2.01106e+10
+v star
+2397.1
+-24923.3
+f star
+-5.50018e+22
+-5.32274e+21
+index star:
+158
+mass star
+1.88785e+25
+x star
+-3.63786e+11
+2.47231e+11
+v star
+9761.34
+14375
+f star
+1.0709e+22
+-7.27958e+21
+index star:
+159
+mass star
+1.8998e+25
+x star
+4.60888e+10
+3.98206e+11
+v star
+18075.3
+-2109.01
+f star
+-1.8066e+21
+-1.56065e+22
+index star:
+160
+mass star
+1.91174e+25
+x star
+5.73953e+11
+-2.42721e+11
+v star
+-5696.56
+-13433.1
+f star
+-6.03029e+21
+2.55512e+21
+index star:
+161
+mass star
+1.92369e+25
+x star
+-5.04789e+11
+7.00536e+11
+v star
+10064.6
+7240.57
+f star
+2.00773e+21
+-2.78856e+21
+index star:
+162
+mass star
+1.93564e+25
+x star
+-1.86519e+09
+-2.51531e+10
+v star
+-73698.2
+5313.88
+f star
+1.70507e+23
+4.03901e+24
+index star:
+163
+mass star
+1.94759e+25
+x star
+2.99358e+10
+-7.84002e+09
+v star
+-15672.5
+-63570.9
+f star
+-2.61394e+24
+6.22835e+23
+index star:
+164
+mass star
+1.95954e+25
+x star
+-3.10356e+11
+-2.55121e+11
+v star
+-11539.1
+14050.8
+f star
+1.24566e+22
+1.02503e+22
+index star:
+165
+mass star
+1.97149e+25
+x star
+-8.39051e+11
+-2.49362e+11
+v star
+-3496.41
+11803.9
+f star
+3.28782e+21
+9.72343e+20
+index star:
+166
+mass star
+1.98343e+25
+x star
+-6.94391e+11
+3.83245e+11
+v star
+6253.81
+11323.4
+f star
+3.66735e+21
+-2.02686e+21
+index star:
+167
+mass star
+1.99538e+25
+x star
+-1.38123e+10
+-5.68949e+11
+v star
+-15294.3
+372.493
+f star
+1.69568e+20
+8.18872e+21
+index star:
+169
+mass star
+2.01928e+25
+x star
+-3.60452e+11
+6.81475e+11
+v star
+11603.4
+6127.45
+f star
+2.11337e+21
+-3.99713e+21
+index star:
+170
+mass star
+2.03123e+25
+x star
+-6.34957e+11
+-3.50986e+11
+v star
+-6543.91
+11848.6
+f star
+4.48572e+21
+2.49213e+21
+index star:
+171
+mass star
+2.04318e+25
+x star
+2.44469e+11
+-4.7638e+11
+v star
+-14011.7
+-7178.36
+f star
+-4.32437e+21
+8.42844e+21
+index star:
+172
+mass star
+2.05512e+25
+x star
+-1.83907e+11
+-7.14289e+10
+v star
+-9430.01
+24182
+f star
+6.53739e+22
+2.54928e+22
+index star:
+173
+mass star
+2.06707e+25
+x star
+5.07409e+11
+-6.80401e+11
+v star
+-10028
+-7474.55
+f star
+-2.28101e+21
+3.05535e+21
+index star:
+174
+mass star
+2.07902e+25
+x star
+1.79253e+11
+5.90172e+11
+v star
+14036.1
+-4276.24
+f star
+-2.11192e+21
+-6.95644e+21
+index star:
+175
+mass star
+2.09097e+25
+x star
+5.46416e+11
+5.67818e+11
+v star
+9345.36
+-9004.5
+f star
+-3.10783e+21
+-3.22684e+21
+index star:
+176
+mass star
+2.10292e+25
+x star
+-8.09519e+10
+-7.83525e+09
+v star
+-4008.75
+40275.9
+f star
+4.20717e+23
+4.27847e+22
+index star:
+177
+mass star
+2.11487e+25
+x star
+-2.45301e+11
+1.84958e+11
+v star
+12532.3
+16608.1
+f star
+2.37901e+22
+-1.79062e+22
+index star:
+178
+mass star
+2.12682e+25
+x star
+-1.30013e+11
+1.39656e+11
+v star
+19385.9
+18010.8
+f star
+5.30273e+22
+-5.67105e+22
+index star:
+179
+mass star
+2.13876e+25
+x star
+-4.30962e+11
+-4.8317e+11
+v star
+-10670.7
+9544.65
+f star
+4.52531e+21
+5.07023e+21
+index star:
+180
+mass star
+2.15071e+25
+x star
+-2.69291e+11
+5.41463e+10
+v star
+4353.92
+21553.3
+f star
+3.7147e+22
+-7.45036e+21
+index star:
+181
+mass star
+2.16266e+25
+x star
+-2.23891e+11
+-2.9591e+11
+v star
+-15061
+11416.2
+f star
+1.25878e+22
+1.66304e+22
+index star:
+182
+mass star
+2.17461e+25
+x star
+2.13212e+11
+-9.15343e+10
+v star
+-9342.53
+-22022.4
+f star
+-4.91432e+22
+2.10979e+22
+index star:
+183
+mass star
+2.18656e+25
+x star
+1.81258e+10
+1.44482e+10
+v star
+48263.3
+-57411.8
+f star
+-4.09785e+24
+-3.4792e+24
+index star:
+185
+mass star
+2.21045e+25
+x star
+-1.38097e+11
+3.90679e+11
+v star
+16885.7
+5953.38
+f star
+5.70879e+21
+-1.61343e+22
+index star:
+186
+mass star
+2.2224e+25
+x star
+-1.59148e+11
+6.80959e+11
+v star
+13491.2
+3169.44
+f star
+1.49241e+21
+-5.86091e+21
+index star:
+187
+mass star
+2.23435e+25
+x star
+-5.34891e+11
+2.19959e+10
+v star
+659.387
+15731.5
+f star
+1.03581e+22
+-4.28771e+20
+index star:
+188
+mass star
+2.2463e+25
+x star
+7.99908e+10
+2.47032e+11
+v star
+21532.9
+-6975
+f star
+-1.35891e+22
+-4.21161e+22
+index star:
+189
+mass star
+2.25825e+25
+x star
+-7.13492e+10
+4.96444e+10
+v star
+22427.4
+32146.4
+f star
+3.2723e+23
+-2.25537e+23
+index star:
+190
+mass star
+2.2702e+25
+x star
+3.34201e+11
+-7.96931e+11
+v star
+-11438.8
+-4792.34
+f star
+-1.57563e+21
+3.72491e+21
+index star:
+191
+mass star
+2.28214e+25
+x star
+-2.4141e+11
+-5.97942e+11
+v star
+-13298.4
+5376.72
+f star
+2.73543e+21
+6.76148e+21
+index star:
+192
+mass star
+2.29409e+25
+x star
+6.02638e+11
+-6.30022e+11
+v star
+-8926.22
+-8528.38
+f star
+-2.78386e+21
+2.89767e+21
+index star:
+193
+mass star
+2.30604e+25
+x star
+4.39895e+11
+1.34603e+10
+v star
+534.595
+-17369.8
+f star
+-1.57907e+22
+-5.03667e+20
+index star:
+194
+mass star
+2.31799e+25
+x star
+3.94824e+11
+1.63699e+11
+v star
+6723.56
+-16293.6
+f star
+-1.55868e+22
+-6.48011e+21
+index star:
+195
+mass star
+2.32994e+25
+x star
+7.67597e+11
+9.50868e+10
+v star
+1603.87
+-13008.6
+f star
+-5.14073e+21
+-6.46728e+20
+index star:
+196
+mass star
+2.34189e+25
+x star
+1.95978e+10
+-6.83521e+11
+v star
+-13929.2
+-391.712
+f star
+-1.9551e+20
+6.65697e+21
+index star:
+197
+mass star
+2.35383e+25
+x star
+-4.57644e+10
+-1.9183e+10
+v star
+-20189.4
+47577.2
+f star
+1.16862e+24
+5.0476e+23
+index star:
+198
+mass star
+2.36578e+25
+x star
+6.47217e+11
+-1.60584e+10
+v star
+-375.917
+-14329.7
+f star
+-7.52368e+21
+1.65206e+20
+index star:
+199
+mass star
+2.37773e+25
+x star
+3.71321e+11
+-2.19892e+11
+v star
+-8973.92
+-15191.4
+f star
+-1.46919e+22
+8.56047e+21
+index star:
+200
+mass star
+2.38968e+25
+x star
+-1.01693e+11
+-6.45947e+11
+v star
+-14079.8
+2226.12
+f star
+1.14348e+21
+7.3468e+21
+index star:
+201
+mass star
+2.40163e+25
+x star
+1.30273e+11
+4.40559e+10
+v star
+9821.36
+-29484.8
+f star
+-1.59431e+23
+-5.42603e+22
+index star:
+202
+mass star
+2.41358e+25
+x star
+3.38275e+11
+3.16304e+11
+v star
+11544.7
+-12390.5
+f star
+-1.09305e+22
+-1.02398e+22
+index star:
+203
+mass star
+2.42553e+25
+x star
+-1.66666e+11
+2.99011e+11
+v star
+17207
+9568.9
+f star
+1.33938e+22
+-2.40279e+22
+index star:
+204
+mass star
+2.43747e+25
+x star
+-1.53322e+11
+-9.72312e+11
+v star
+-11468.2
+1820.43
+f star
+5.24151e+20
+3.31495e+21
+index star:
+205
+mass star
+2.44942e+25
+x star
+6.74929e+11
+-2.25034e+11
+v star
+-4337.38
+-12947.6
+f star
+-6.11722e+21
+2.04856e+21
+index star:
+206
+mass star
+2.46137e+25
+x star
+4.65446e+11
+-4.11189e+11
+v star
+-9686.63
+-10942.2
+f star
+-6.35542e+21
+5.62976e+21
+index star:
+207
+mass star
+2.47332e+25
+x star
+1.05734e+11
+5.57115e+11
+v star
+15027.4
+-2860.28
+f star
+-1.90772e+21
+-1.004e+22
+index star:
+208
+mass star
+2.48527e+25
+x star
+-7.7861e+10
+2.33486e+11
+v star
+22042
+7335.02
+f star
+1.72648e+22
+-5.16922e+22
+index star:
+209
+mass star
+2.49722e+25
+x star
+-1.64796e+11
+-6.49131e+11
+v star
+-13644.3
+3472.86
+f star
+1.82196e+21
+7.17623e+21
+index star:
+210
+mass star
+2.50916e+25
+x star
+-2.30262e+11
+-7.64978e+11
+v star
+-12379.8
+3703.75
+f star
+1.43924e+21
+4.98419e+21
+index star:
+211
+mass star
+2.52111e+25
+x star
+3.69126e+11
+-5.09757e+11
+v star
+-11767.4
+-8509.4
+f star
+-4.96142e+21
+6.85469e+21
+index star:
+212
+mass star
+2.53306e+25
+x star
+-4.19574e+11
+2.81544e+11
+v star
+9050.92
+13436.5
+f star
+1.09636e+22
+-7.37088e+21
+index star:
+213
+mass star
+2.54501e+25
+x star
+5.52498e+11
+7.60917e+11
+v star
+9601.98
+-6979.28
+f star
+-2.26089e+21
+-3.08789e+21
+index star:
+214
+mass star
+2.55696e+25
+x star
+5.71683e+11
+-4.54677e+11
+v star
+-8396.58
+-10555.5
+f star
+-4.98574e+21
+3.9515e+21
+index star:
+215
+mass star
+2.56891e+25
+x star
+6.33978e+11
+-9.60185e+10
+v star
+-2168.5
+-14235.2
+f star
+-8.2295e+21
+1.23431e+21
+index star:
+216
+mass star
+2.58085e+25
+x star
+4.32808e+11
+-1.08926e+11
+v star
+-4206.67
+-16724.8
+f star
+-1.66805e+22
+4.19458e+21
+index star:
+217
+mass star
+2.5928e+25
+x star
+5.98423e+11
+-5.30662e+10
+v star
+-1324.22
+-14816.5
+f star
+-9.51514e+21
+8.23829e+20
+index star:
+218
+mass star
+2.60475e+25
+x star
+1.79129e+11
+2.79737e+11
+v star
+16831.1
+-10798.3
+f star
+-1.6897e+22
+-2.64246e+22
+index star:
+219
+mass star
+2.6167e+25
+x star
+3.2194e+11
+2.81304e+11
+v star
+11600.5
+-13261.2
+f star
+-1.43052e+22
+-1.24932e+22
+index star:
+220
+mass star
+2.62865e+25
+x star
+-4.38972e+11
+2.33811e+11
+v star
+7699.34
+14426.8
+f star
+1.24879e+22
+-6.62187e+21
+index star:
+222
+mass star
+2.65254e+25
+x star
+-2.8753e+11
+-7.75483e+11
+v star
+-11829.3
+4421.49
+f star
+1.87363e+21
+4.83946e+21
+index star:
+223
+mass star
+2.66449e+25
+x star
+-6.27226e+11
+1.72376e+11
+v star
+3795.41
+13769.4
+f star
+8.07497e+21
+-2.22338e+21
+index star:
+224
+mass star
+2.67644e+25
+x star
+-8.75305e+11
+3.86746e+11
+v star
+4777.53
+10772.9
+f star
+3.57658e+21
+-1.56898e+21
+index star:
+225
+mass star
+2.68839e+25
+x star
+2.04871e+11
+-8.81053e+11
+v star
+-11797.9
+-2732.09
+f star
+-9.84349e+20
+4.26581e+21
+index star:
+226
+mass star
+2.70034e+25
+x star
+-1.39439e+11
+-8.58094e+11
+v star
+-12200.7
+1991.72
+f star
+7.55969e+20
+4.69873e+21
+index star:
+227
+mass star
+2.71229e+25
+x star
+9.13954e+11
+2.02026e+11
+v star
+2559.76
+-11633.4
+f star
+-4.03098e+21
+-8.95832e+20
+index star:
+228
+mass star
+2.72424e+25
+x star
+6.22453e+10
+-9.9116e+10
+v star
+-28452.1
+-17976
+f star
+-1.4113e+23
+2.23012e+23
+index star:
+229
+mass star
+2.73618e+25
+x star
+-4.16721e+11
+-4.03563e+11
+v star
+-10507.8
+10850.1
+f star
+7.77733e+21
+7.46424e+21
+index star:
+230
+mass star
+2.74813e+25
+x star
+2.62139e+10
+6.69106e+11
+v star
+14066
+-561.719
+f star
+-3.22781e+20
+-8.14504e+21
+index star:
+231
+mass star
+2.76008e+25
+x star
+-4.76308e+10
+-9.96271e+11
+v star
+-11526.5
+560.146
+f star
+1.70975e+20
+3.69458e+21
+index star:
+232
+mass star
+2.77203e+25
+x star
+3.63408e+11
+1.3649e+11
+v star
+6506.91
+-17312.6
+f star
+-2.28513e+22
+-8.58892e+21
+index star:
+233
+mass star
+2.78398e+25
+x star
+5.22793e+11
+8.05214e+11
+v star
+9865.72
+-6417.15
+f star
+-2.18071e+21
+-3.38736e+21
+index star:
+234
+mass star
+2.79593e+25
+x star
+-1.20473e+11
+1.25828e+10
+v star
+3385.48
+32911.8
+f star
+2.52031e+23
+-2.5687e+22
+index star:
+235
+mass star
+2.80787e+25
+x star
+3.90874e+11
+-6.52932e+11
+v star
+-11334.3
+-6780.24
+f star
+-3.31035e+21
+5.52933e+21
+index star:
+237
+mass star
+2.83177e+25
+x star
+2.6594e+11
+7.00512e+11
+v star
+12441.5
+-4732.14
+f star
+-2.38035e+21
+-6.27374e+21
+index star:
+238
+mass star
+2.84372e+25
+x star
+5.87349e+11
+-7.10577e+11
+v star
+-9260.43
+-7636.99
+f star
+-2.84947e+21
+3.43913e+21
+index star:
+239
+mass star
+2.85567e+25
+x star
+-4.71429e+11
+-1.35837e+11
+v star
+-4552.59
+15855.8
+f star
+1.51688e+22
+4.43734e+21
+index star:
+240
+mass star
+2.86762e+25
+x star
+-1.12085e+11
+-2.29648e+11
+v star
+-20497.7
+10003.1
+f star
+2.55294e+22
+5.24642e+22
+index star:
+241
+mass star
+2.87956e+25
+x star
+5.47762e+11
+-7.54155e+10
+v star
+-2098.81
+-15367.5
+f star
+-1.23783e+22
+1.67009e+21
+index star:
+242
+mass star
+2.89151e+25
+x star
+6.94082e+11
+-1.1744e+11
+v star
+-2312.75
+-13509.9
+f star
+-7.66674e+21
+1.33538e+21
+index star:
+243
+mass star
+2.90346e+25
+x star
+4.95719e+11
+-7.68032e+11
+v star
+-10131.8
+-6527.58
+f star
+-2.51429e+21
+3.88949e+21
+index star:
+244
+mass star
+2.91541e+25
+x star
+-2.53445e+11
+3.02555e+11
+v star
+14073.6
+11758.7
+f star
+1.59797e+22
+-1.9078e+22
+index star:
+246
+mass star
+2.93931e+25
+x star
+-1.42297e+11
+-6.04527e+10
+v star
+-11512.6
+26975.2
+f star
+1.50205e+23
+6.42051e+22
+index star:
+247
+mass star
+2.95125e+25
+x star
+-3.28637e+11
+-1.07663e+11
+v star
+-6092.71
+18614.1
+f star
+3.11712e+22
+1.02245e+22
+index star:
+248
+mass star
+2.9632e+25
+x star
+-7.76781e+11
+-6.00125e+11
+v star
+-7106.18
+9217.93
+f star
+3.23918e+21
+2.52331e+21
+index star:
+249
+mass star
+2.97515e+25
+x star
+8.43213e+11
+2.31157e+11
+v star
+3258.13
+-11889.6
+f star
+-4.98165e+21
+-1.37699e+21
+index star:
+250
+mass star
+2.9871e+25
+x star
+-9.27736e+10
+1.08809e+11
+v star
+23152.8
+19808.4
+f star
+1.26142e+23
+-1.4748e+23
+index star:
+251
+mass star
+2.99905e+25
+x star
+8.13168e+11
+2.94923e+10
+v star
+448.599
+-12763.9
+f star
+-6.03357e+21
+-2.16441e+20
+index star:
+252
+mass star
+3.011e+25
+x star
+1.61333e+11
+8.83194e+11
+v star
+11962
+-2192.75
+f star
+-8.90796e+20
+-4.89237e+21
+index star:
+253
+mass star
+3.02295e+25
+x star
+-2.05483e+11
+-1.00996e+11
+v star
+-10605
+21634.1
+f star
+6.8768e+22
+3.38916e+22
+index star:
+254
+mass star
+3.03489e+25
+x star
+-7.62868e+11
+-3.62742e+11
+v star
+-5374.95
+11319.9
+f star
+5.11384e+21
+2.42353e+21
+index star:
+255
+mass star
+3.04684e+25
+x star
+1.813e+11
+-2.92235e+10
+v star
+-4237.37
+-26554.5
+f star
+-1.18362e+23
+1.88794e+22
+index star:
+256
+mass star
+3.05879e+25
+x star
+-7.62442e+11
+-4.6764e+11
+v star
+-6371.06
+10391.6
+f star
+4.32433e+21
+2.6683e+21
+index star:
+257
+mass star
+3.07074e+25
+x star
+-3.03852e+11
+-4.24981e+11
+v star
+-12962.5
+9286.96
+f star
+8.69589e+21
+1.21883e+22
+index star:
+258
+mass star
+3.08269e+25
+x star
+2.83947e+11
+-8.19554e+11
+v star
+-11685.1
+-4039.6
+f star
+-1.77069e+21
+5.15649e+21
+index star:
+259
+mass star
+3.09464e+25
+x star
+2.79901e+11
+-4.81609e+10
+v star
+-3679.08
+-21326.2
+f star
+-5.02212e+22
+8.58151e+21
+index star:
+260
+mass star
+3.10658e+25
+x star
+7.11461e+11
+-8.36219e+10
+v star
+-1616.29
+-13540.8
+f star
+-8.04335e+21
+9.03674e+20
+index star:
+261
+mass star
+3.11853e+25
+x star
+9.51612e+10
+-7.2964e+11
+v star
+-13324.4
+-1728.42
+f star
+-9.989e+20
+7.5984e+21
+index star:
+262
+mass star
+3.13048e+25
+x star
+-3.71991e+11
+-4.52029e+10
+v star
+-2225.49
+18666.3
+f star
+2.94623e+22
+3.50291e+21
+index star:
+263
+mass star
+3.14243e+25
+x star
+-2.8087e+10
+-1.57618e+10
+v star
+-31419.1
+56158.8
+f star
+3.47934e+24
+2.04827e+24
+index star:
+264
+mass star
+3.15438e+25
+x star
+1.41344e+11
+1.79193e+11
+v star
+18923.1
+-14956.1
+f star
+-4.98112e+22
+-6.32271e+22
+index star:
+265
+mass star
+3.16633e+25
+x star
+2.72941e+11
+4.20791e+11
+v star
+13647.2
+-8863.88
+f star
+-9.09655e+21
+-1.404e+22
+index star:
+266
+mass star
+3.17827e+25
+x star
+-3.00657e+10
+-2.1113e+11
+v star
+-24729.6
+3496.91
+f star
+1.29354e+22
+9.19182e+22
+index star:
+267
+mass star
+3.19022e+25
+x star
+-5.53129e+10
+-5.53769e+11
+v star
+-15362.4
+1539.17
+f star
+1.3619e+21
+1.36052e+22
+index star:
+268
+mass star
+3.20217e+25
+x star
+4.65408e+11
+-2.71671e+11
+v star
+-7919.96
+-13577
+f star
+-1.26818e+22
+7.33183e+21
+index star:
+269
+mass star
+3.21412e+25
+x star
+-2.21448e+11
+-5.15762e+10
+v star
+-5466.1
+23543.8
+f star
+8.04759e+22
+1.87817e+22
+index star:
+270
+mass star
+3.22607e+25
+x star
+3.41867e+10
+-7.78387e+09
+v star
+-12985.5
+-59916.9
+f star
+-3.40077e+24
+7.07986e+23
+index star:
+271
+mass star
+3.23802e+25
+x star
+-2.65563e+10
+-3.23594e+11
+v star
+-20155.8
+1669.64
+f star
+3.30483e+21
+4.06707e+22
+index star:
+272
+mass star
+3.24996e+25
+x star
+6.07176e+10
+1.08443e+11
+v star
+28549.9
+-15974.2
+f star
+-1.35793e+23
+-2.43841e+23
+index star:
+273
+mass star
+3.26191e+25
+x star
+-1.27861e+11
+1.81252e+11
+v star
+20001.1
+14108
+f star
+5.08143e+22
+-7.19503e+22
+index star:
+274
+mass star
+3.27386e+25
+x star
+3.54713e+11
+-2.31573e+11
+v star
+-9654.03
+-14748.4
+f star
+-2.01867e+22
+1.33063e+22
+index star:
+275
+mass star
+3.28581e+25
+x star
+2.37854e+11
+1.20973e+11
+v star
+10054.2
+-19878.4
+f star
+-5.45711e+22
+-2.76607e+22
+index star:
+276
+mass star
+3.29776e+25
+x star
+-8.53435e+11
+-4.36753e+11
+v star
+-5344.01
+10476.3
+f star
+4.27293e+21
+2.1719e+21
+index star:
+277
+mass star
+3.30971e+25
+x star
+-2.58076e+11
+-7.76493e+11
+v star
+-12088.3
+4032.6
+f star
+2.06749e+21
+6.26831e+21
+index star:
+278
+mass star
+3.32166e+25
+x star
+-1.97125e+10
+4.82326e+09
+v star
+16268.4
+79111.3
+f star
+1.05743e+25
+-2.16254e+24
+index star:
+279
+mass star
+3.3336e+25
+x star
+-8.09482e+11
+3.98197e+11
+v star
+5357.08
+10892.5
+f star
+4.89096e+21
+-2.38513e+21
+index star:
+280
+mass star
+3.34555e+25
+x star
+6.15085e+11
+-1.40116e+11
+v star
+-3233.44
+-14120.4
+f star
+-1.08985e+22
+2.52299e+21
+index star:
+281
+mass star
+3.3575e+25
+x star
+-3.61194e+11
+-3.46211e+11
+v star
+-11265.7
+11766
+f star
+1.28628e+22
+1.23359e+22
+index star:
+282
+mass star
+3.36945e+25
+x star
+-6.26615e+11
+-1.58934e+11
+v star
+-3501.22
+13886.1
+f star
+1.04229e+22
+2.62211e+21
+index star:
+283
+mass star
+3.3814e+25
+x star
+-2.65684e+11
+-3.75473e+11
+v star
+-13871.5
+9820.33
+f star
+1.22475e+22
+1.73415e+22
+index star:
+284
+mass star
+3.39335e+25
+x star
+-4.64745e+11
+-1.05132e+11
+v star
+-3660.87
+16245
+f star
+1.93655e+22
+4.32417e+21
+index star:
+285
+mass star
+6.95397e+25
+x star
+7.18752e+09
+-2.73828e+10
+v star
+-65758.5
+-18923.1
+f star
+-3.22287e+24
+1.10627e+25
+index star:
+286
+mass star
+3.41724e+25
+x star
+1.98414e+11
+-3.83792e+11
+v star
+-15574.3
+-8043
+f star
+-1.11716e+22
+2.15967e+22
+index star:
+288
+mass star
+3.44114e+25
+x star
+-1.38708e+11
+6.85543e+11
+v star
+13462.4
+2696.56
+f star
+1.75001e+21
+-9.1963e+21
+index star:
+289
+mass star
+3.45309e+25
+x star
+5.47831e+11
+-1.13856e+11
+v star
+-3138.85
+-15057
+f star
+-1.43272e+22
+3.031e+21
+index star:
+290
+mass star
+3.46504e+25
+x star
+4.33156e+11
+-8.31126e+11
+v star
+-10559.8
+-5488.99
+f star
+-2.43052e+21
+4.66796e+21
+index star:
+291
+mass star
+3.47698e+25
+x star
+5.83124e+11
+3.33915e+10
+v star
+893.573
+-15108.3
+f star
+-1.34647e+22
+-9.38364e+20
+index star:
+292
+mass star
+3.48893e+25
+x star
+4.98289e+11
+-1.62811e+10
+v star
+-528.287
+-16319.4
+f star
+-1.86222e+22
+5.84142e+20
+index star:
+293
+mass star
+3.50088e+25
+x star
+6.00372e+11
+-5.00078e+11
+v star
+-8355.4
+-10003.8
+f star
+-5.88022e+21
+4.89643e+21
+index star:
+294
+mass star
+3.51283e+25
+x star
+-1.74195e+11
+2.17942e+11
+v star
+17056.1
+13608.3
+f star
+3.74709e+22
+-4.68262e+22
+index star:
+295
+mass star
+3.52478e+25
+x star
+-2.88917e+11
+-8.5371e+10
+v star
+-5951.8
+20138.1
+f star
+4.94683e+22
+1.46426e+22
+index star:
+296
+mass star
+3.53673e+25
+x star
+1.63213e+11
+9.8266e+10
+v star
+13621
+-22605.6
+f star
+-1.10715e+23
+-6.68155e+22
+index star:
+298
+mass star
+3.56062e+25
+x star
+2.38182e+11
+-9.52664e+10
+v star
+-8498.81
+-21087.2
+f star
+-6.68765e+22
+2.66591e+22
+index star:
+299
+mass star
+3.57257e+25
+x star
+3.4692e+11
+-3.52925e+11
+v star
+-11674.8
+-11483.9
+f star
+-1.3559e+22
+1.38077e+22

@@ -1,12 +1,16 @@
 #include "cmath"
 #include <QPainter>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+using namespace std;
 
 #ifndef STAR_H
 #define STAR_H
 const int dim = 2;//размерность
-const int numStars = 300;
+int numStars = 300;
 const int borderMassC = 10;
-const double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000, distSumm = 1000;
+double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000, distSumm = 1000;
 const double massSun   = 1.98892e30,
              massJup   = 1898.6e24,
              massSaturn = 5.683e26,
@@ -90,6 +94,7 @@ star::star(){
     for(int k = 0; k < dim; ++k){
         x[k] = 0;
         v[k] = 0;
+        f[k] = 0;
     }
     m = 0;
     changing_color();
@@ -254,3 +259,106 @@ public:
 };
 
 #endif // STAR_H
+
+
+ostream& operator<<(ostream& os, const galaxy* galaxy){
+    /*os << "numStars:" << '\n';
+    os << numStars << '\n';
+    os << "starCounter:" << '\n';
+    os << star::starCounter << '\n';
+    os << "systemRadius:" << '\n';
+    os << systemRadius << '\n' << '\n';*/
+    // os << "dim:" << '\n';
+    // os << dim << '\n';
+    for(int i = 0; i < galaxy->num; i++){
+        if(galaxy->stars[i] != nullptr){
+            os << "index star:" << '\n';
+            os << i << '\n';
+            os << "mass star" << '\n';
+            os << galaxy->stars[i]->m << '\n';
+            os << "x star" << '\n';
+            os << galaxy->stars[i]->x[0] << '\n';
+            os << galaxy->stars[i]->x[1] << '\n';
+            os << "v star" << '\n';
+            os << galaxy->stars[i]->v[0] << '\n';
+            os << galaxy->stars[i]->v[1] << '\n';
+            os << "f star" << '\n';
+            os << galaxy->stars[i]->f[0] << '\n';
+            os << galaxy->stars[i]->f[1] << '\n';
+        }
+    }
+    return os;
+}
+
+istream& operator>> (istream& is, galaxy& galaxy){//*
+
+    for (int i = 0; i < galaxy.num; ++i) {
+        delete galaxy.stars[i];
+    }
+    delete[] galaxy.stars;
+    galaxy.stars = nullptr;
+    galaxy.num = 0;
+
+    std::vector<star*> tempStars; // Временный вектор для хранения звезд
+    std::string line;
+    while (std::getline(is, line)) {
+        std::istringstream iss(line);
+        std::string token;
+        iss >> token >> token; // "index", "star:"
+        double mass = 0, x= 0, y= 0, vx= 0, vy= 0, fx= 0, fy= 0;
+        iss >> mass >> token >> token >> x >> y >> token >> token >> vx >> vy >> token >> token >> fx >> fy;
+        star* temporary_star = new star();
+        temporary_star->m = mass;
+        temporary_star->x[0] = x;
+        temporary_star->x[1] = y;
+        temporary_star->v[0] = vx;
+        temporary_star->v[1] = vy;
+        temporary_star->f[0] = fx;
+        temporary_star->f[1] = fy;
+        tempStars.push_back(temporary_star);
+    }
+
+    galaxy.num = tempStars.size();
+    galaxy.stars = new star*[galaxy.num];
+    for (int i = 0; i < galaxy.num; ++i) {
+        galaxy.stars[i] = tempStars[i];
+    }
+
+    // string text;
+    // double trash;
+
+    /*is >> text;
+    is >> numStars;
+
+    is >> text;
+    is >> star::starCounter;
+
+    is>>text;
+    is>>systemRadius;*/
+
+    // is>>text;
+    // is>>dim;
+
+
+    /*for(int i = 0; i < star::starCounter; i++){
+
+        is>>text;//пустая строка
+        is>>text;
+        is >> trash;
+        is>>text;
+        is >> galaxy->stars[i]->m;
+        is>>text;
+        is >> galaxy->stars[i]->x[0];
+        is >> galaxy->stars[i]->x[1];
+        is>>text;
+        is >> galaxy->stars[i]->v[0];
+        is >> galaxy->stars[i]->v[1];
+        is>>text;
+        is >> galaxy->stars[i]->f[0];
+        is >> galaxy->stars[i]->f[1];
+    }*/
+    return is;
+}
+
+
+
