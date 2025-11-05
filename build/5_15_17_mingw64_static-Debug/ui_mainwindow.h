@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFormLayout>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -22,6 +21,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "qcustomplot.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -42,6 +42,8 @@ public:
     QLineEdit *impulse_lineEdit;
     QLabel *label_28;
     QLineEdit *impuls_moment_lineEdit;
+    QLabel *label_32;
+    QLineEdit *lineEdit;
     QWidget *formLayoutWidget_2;
     QFormLayout *formLayout_2;
     QLabel *label_4;
@@ -83,10 +85,15 @@ public:
     QPushButton *save_Button;
     QPushButton *load_Button;
     QPushButton *pushButtonStart;
-    QWidget *widget;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label_32;
-    QLineEdit *lineEdit;
+    QWidget *formLayoutWidget_5;
+    QFormLayout *formLayout_8;
+    QLabel *label_33;
+    QLabel *label_34;
+    QLineEdit *num_obj_lineEdit;
+    QLineEdit *size_obl_lineEdit;
+    QLabel *label_35;
+    QLineEdit *dist_sum_lineEdit;
+    QCustomPlot *widget;
     QWidget *widget1;
     QFormLayout *formLayout_7;
     QLineEdit *potencial_lineEdit;
@@ -103,14 +110,14 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setWindowModality(Qt::NonModal);
-        MainWindow->resize(1417, 818);
+        MainWindow->resize(1552, 889);
         actionNEW = new QAction(MainWindow);
         actionNEW->setObjectName(QString::fromUtf8("actionNEW"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         formLayoutWidget = new QWidget(centralwidget);
         formLayoutWidget->setObjectName(QString::fromUtf8("formLayoutWidget"));
-        formLayoutWidget->setGeometry(QRect(10, 0, 261, 171));
+        formLayoutWidget->setGeometry(QRect(10, 0, 211, 201));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName(QString::fromUtf8("formLayout"));
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -163,6 +170,16 @@ public:
         impuls_moment_lineEdit->setObjectName(QString::fromUtf8("impuls_moment_lineEdit"));
 
         formLayout->setWidget(4, QFormLayout::FieldRole, impuls_moment_lineEdit);
+
+        label_32 = new QLabel(formLayoutWidget);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+
+        formLayout->setWidget(5, QFormLayout::LabelRole, label_32);
+
+        lineEdit = new QLineEdit(formLayoutWidget);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+
+        formLayout->setWidget(5, QFormLayout::FieldRole, lineEdit);
 
         formLayoutWidget_2 = new QWidget(centralwidget);
         formLayoutWidget_2->setObjectName(QString::fromUtf8("formLayoutWidget_2"));
@@ -334,7 +351,7 @@ public:
 
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(630, 0, 160, 103));
+        verticalLayoutWidget->setGeometry(QRect(590, 0, 160, 101));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -348,28 +365,53 @@ public:
 
         verticalLayout->addWidget(load_Button);
 
-        pushButtonStart = new QPushButton(centralwidget);
+        pushButtonStart = new QPushButton(verticalLayoutWidget);
         pushButtonStart->setObjectName(QString::fromUtf8("pushButtonStart"));
-        pushButtonStart->setGeometry(QRect(630, 120, 158, 29));
-        widget = new QWidget(centralwidget);
+
+        verticalLayout->addWidget(pushButtonStart);
+
+        formLayoutWidget_5 = new QWidget(centralwidget);
+        formLayoutWidget_5->setObjectName(QString::fromUtf8("formLayoutWidget_5"));
+        formLayoutWidget_5->setGeometry(QRect(790, 0, 231, 100));
+        formLayout_8 = new QFormLayout(formLayoutWidget_5);
+        formLayout_8->setObjectName(QString::fromUtf8("formLayout_8"));
+        formLayout_8->setContentsMargins(0, 0, 0, 0);
+        label_33 = new QLabel(formLayoutWidget_5);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+
+        formLayout_8->setWidget(0, QFormLayout::LabelRole, label_33);
+
+        label_34 = new QLabel(formLayoutWidget_5);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+
+        formLayout_8->setWidget(1, QFormLayout::LabelRole, label_34);
+
+        num_obj_lineEdit = new QLineEdit(formLayoutWidget_5);
+        num_obj_lineEdit->setObjectName(QString::fromUtf8("num_obj_lineEdit"));
+
+        formLayout_8->setWidget(0, QFormLayout::FieldRole, num_obj_lineEdit);
+
+        size_obl_lineEdit = new QLineEdit(formLayoutWidget_5);
+        size_obl_lineEdit->setObjectName(QString::fromUtf8("size_obl_lineEdit"));
+
+        formLayout_8->setWidget(1, QFormLayout::FieldRole, size_obl_lineEdit);
+
+        label_35 = new QLabel(formLayoutWidget_5);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+
+        formLayout_8->setWidget(2, QFormLayout::LabelRole, label_35);
+
+        dist_sum_lineEdit = new QLineEdit(formLayoutWidget_5);
+        dist_sum_lineEdit->setObjectName(QString::fromUtf8("dist_sum_lineEdit"));
+
+        formLayout_8->setWidget(2, QFormLayout::FieldRole, dist_sum_lineEdit);
+
+        widget = new QCustomPlot(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(320, 120, 221, 30));
-        horizontalLayout = new QHBoxLayout(widget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label_32 = new QLabel(widget);
-        label_32->setObjectName(QString::fromUtf8("label_32"));
-
-        horizontalLayout->addWidget(label_32);
-
-        lineEdit = new QLineEdit(widget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-
-        horizontalLayout->addWidget(lineEdit);
-
+        widget->setGeometry(QRect(1050, 550, 471, 251));
         widget1 = new QWidget(centralwidget);
         widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(280, 0, 310, 101));
+        widget1->setGeometry(QRect(250, 0, 271, 101));
         formLayout_7 = new QFormLayout(widget1);
         formLayout_7->setObjectName(QString::fromUtf8("formLayout_7"));
         formLayout_7->setContentsMargins(0, 0, 0, 0);
@@ -406,7 +448,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1417, 25));
+        menubar->setGeometry(QRect(0, 0, 1552, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -429,6 +471,7 @@ public:
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\234\320\260\321\201\321\201\320\260 \321\201\320\270\321\201\321\202\320\265\320\274\321\213", nullptr));
         label_27->setText(QCoreApplication::translate("MainWindow", "\320\230\320\274\320\277\321\203\320\273\321\214\321\201 \321\201\320\270\321\201\321\202\320\265\320\274\321\213", nullptr));
         label_28->setText(QCoreApplication::translate("MainWindow", "\320\234\320\276\320\274\320\265\320\275\321\202 \320\270\320\274\320\277\321\203\320\273\321\214\321\201\320\260", nullptr));
+        label_32->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\267\320\262\320\265\320\267\320\264", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "\320\234\320\260\321\201\321\201\320\260", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\321\213 X", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\321\213 Y", nullptr));
@@ -447,7 +490,9 @@ public:
         save_Button->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\201\320\270\321\201\321\202\320\265\320\274\321\203", nullptr));
         load_Button->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \321\201\320\270\321\201\321\202\320\265\320\274\321\203", nullptr));
         pushButtonStart->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
-        label_32->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\267\320\262\320\265\320\267\320\264", nullptr));
+        label_33->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\273-\320\262\320\276 \320\276\320\261\321\212\320\265\320\272\321\202\320\276\320\262", nullptr));
+        label_34->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\267\320\274\320\265\321\200 \320\276\320\261\320\273\320\260\321\201\321\202\320\270", nullptr));
+        label_35->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\321\201\321\201\321\202\320\276\321\217\320\275\320\270\320\265 \321\201\320\273\320\270\321\217\320\275\320\270\321\217", nullptr));
         label_30->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\320\275\320\265\321\202\320\270\321\207\320\265\321\201\320\272\320\260\321\217 \321\215\320\275\320\265\321\200\320\263\320\270\321\217", nullptr));
         label_31->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\320\260\321\217 \321\215\320\275\320\265\321\200\320\263\320\270\321\217 \321\201\320\270\321\201\321\202\320\265\320\274\321\213", nullptr));
         label_29->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\202\320\265\320\275\321\206\320\270\320\260\320\273\321\214\320\275\320\260\321\217 \321\215\320\275\320\265\321\200\320\263\320\270\321\217", nullptr));

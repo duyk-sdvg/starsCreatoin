@@ -10,7 +10,8 @@ using namespace std;
 const int dim = 2;//размерность
 int numStars = 300;
 const int borderMassC = 10;
-double G = 6.67408e-11, systemRadius = 1e12, distConnect = 1e9, dt = 10000, distSumm = 1000;
+double secondCountStar = 0;
+double G = 6.67408e-11, systemRadius = 1e12, secondsystemRadius = 0, distConnect = 1e9, seconddistConnect = 0, dt = 10000, distSumm = 1000;//1e12
 const double massSun   = 1.98892e30,
              massJup   = 1898.6e24,
              massSaturn = 5.683e26,
@@ -181,6 +182,8 @@ public:
     ~galaxy(){delete[] stars;};
     double border[dim];
 
+    void resize();
+
     void move(){
         double dist;
         double dCoord[dim];
@@ -258,7 +261,45 @@ public:
     }
 };
 
-#endif // STAR_H
+void galaxy::resize(){
+    int n = numStars;
+    //
+    for(int i = 0; i < num; i++){
+        delete stars[i];
+        stars[i] = nullptr;
+    }
+    //delete[] stars;
+    num = n;
+
+    stars = new star*[num];
+    double x1[dim] = {0}, v1[dim] = {0};
+    stars[0] = new star(x1, v1, massSun); // самый массивный объект в начале координат
+    double rad;
+    for(int i = 1; i < num; ++i){
+        rad = 0;
+        double R = rand() * systemRadius / RAND_MAX,
+            fi  = (2 * M_PI * rand()) / RAND_MAX,
+            theta = (M_PI * rand()) / RAND_MAX;
+        x1[0] = R  * cos(fi);
+        x1[1] = R  * sin(fi);
+        if(dim == 3){
+            x1[0] *= sin(theta);
+            x1[1] *= sin(theta);
+            x1[3] = R * cos(theta);
+        }
+        for(int k = 0; k < dim; ++k){
+            rad += x1[k] * x1[k];
+        }
+        // вторая космическая скорость
+        double absV = sqrt(G * stars[0]->m / sqrt(rad)), alpha = (2 * M_PI * rand()) / RAND_MAX;
+        //если размерность 3, нужен еще один угол как для координат(два угла годятся и для плоскости, желающие могут сделать)
+        //            v1[0] = absV * cos(alpha);
+        //            v1[1] = absV * sin(alpha);
+        v1[0] =  absV * sin(fi);
+        v1[1] = -absV * cos(fi); // скорость направлена вдоль окружности с центром в начале координат
+        stars[i] = new star(x1, v1, massEarth / num * (6 * i));
+    }
+}
 
 
 ostream& operator<<(ostream& os, const galaxy* galaxy){
@@ -290,75 +331,64 @@ ostream& operator<<(ostream& os, const galaxy* galaxy){
     return os;
 }
 
-istream& operator>> (istream& is, galaxy& galaxy){//*
+istream& operator>> (istream& is, galaxy* galaxy){//*
 
-    for (int i = 0; i < galaxy.num; ++i) {
-        delete galaxy.stars[i];
-    }
-    delete[] galaxy.stars;
-    galaxy.stars = nullptr;
-    galaxy.num = 0;
-
-    std::vector<star*> tempStars; // Временный вектор для хранения звезд
-    std::string line;
-    while (std::getline(is, line)) {
-        std::istringstream iss(line);
-        std::string token;
-        iss >> token >> token; // "index", "star:"
-        double mass = 0, x= 0, y= 0, vx= 0, vy= 0, fx= 0, fy= 0;
-        iss >> mass >> token >> token >> x >> y >> token >> token >> vx >> vy >> token >> token >> fx >> fy;
-        star* temporary_star = new star();
-        temporary_star->m = mass;
-        temporary_star->x[0] = x;
-        temporary_star->x[1] = y;
-        temporary_star->v[0] = vx;
-        temporary_star->v[1] = vy;
-        temporary_star->f[0] = fx;
-        temporary_star->f[1] = fy;
-        tempStars.push_back(temporary_star);
+    /*for (int i = 0; i < galaxy->num; ++i) {
+        delete galaxy->stars[i];
+        galaxy->stars[i] = nullptr;
     }
 
-    galaxy.num = tempStars.size();
-    galaxy.stars = new star*[galaxy.num];
-    for (int i = 0; i < galaxy.num; ++i) {
-        galaxy.stars[i] = tempStars[i];
+    galaxy->num = numStars;
+    galaxy->stars = new star*[galaxy->num];
+    string text;
+    for(int i = 0; i < secondCountStar; i++){
+        double m,x[2],v[2],f[2];
+        is >> text;//index
+        is >> text;//star:
+        is >> text;//0
+        is >> text;//mass
+        is >> text;//star
+        is >> m;
+        is >> text;//x
+        is >> text;//star
+        is >> x[0];
+        is >> x[1];
+        is >> text;//v
+        is >> text;//star
+        is >> v[0];
+        is >> v[1];
+        is >> text;//f
+        is >> text;//star
+        is >> f[0];
+        is >> f[1];
+        galaxy->stars[i] = new star(x, v, m);
+        galaxy->stars[i]->f[0] = f[0];
+        //is >> text;//galaxy->stars[i]->f[0] = f[0];
+        //is >> text;//galaxy->stars[i]->f[1] = f[1];
+        galaxy->stars[i]->f[1] = f[1];
     }
+    secondCountStar = 0;*/
 
-    // string text;
-    // double trash;
+    string text;
+    double trash;
 
-    /*is >> text;
+    is >> text;
     is >> numStars;
 
     is >> text;
-    is >> star::starCounter;
+    is >> trash;
 
     is>>text;
-    is>>systemRadius;*/
+    is>>systemRadius;
 
-    // is>>text;
-    // is>>dim;
+    is>>text;
+    is>>distConnect;
 
+    galaxy->resize();
 
-    /*for(int i = 0; i < star::starCounter; i++){
-
-        is>>text;//пустая строка
-        is>>text;
-        is >> trash;
-        is>>text;
-        is >> galaxy->stars[i]->m;
-        is>>text;
-        is >> galaxy->stars[i]->x[0];
-        is >> galaxy->stars[i]->x[1];
-        is>>text;
-        is >> galaxy->stars[i]->v[0];
-        is >> galaxy->stars[i]->v[1];
-        is>>text;
-        is >> galaxy->stars[i]->f[0];
-        is >> galaxy->stars[i]->f[1];
-    }*/
     return is;
 }
 
 
 
+#endif // STAR_H

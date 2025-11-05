@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTimer>
+#include <QVector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +30,9 @@ public:
 private:
     Ui::MainWindow *ui;
     bool flag = false;
+    double xBegin, xEnd, h, X;//xBegin - начало промежутка, xEnd - конец, h - шаг между двумя точками, Х - врем перемен с помощью котор заполн вектор
+    int N;// кол во точек
+    QVector<double> x = {0}, y = {0};// для хранения точек
 
 protected:
     void paintEvent(QPaintEvent *event);
@@ -44,6 +48,9 @@ private slots:
     void on_pushButtonStart_clicked();
     void on_save_Button_clicked();
     void on_load_Button_clicked();
+    void on_num_obj_lineEdit_returnPressed();
+    void on_size_obl_lineEdit_returnPressed();
+    void on_dist_sum_lineEdit_returnPressed();
 };
 
 #endif // MAINWINDOW_H

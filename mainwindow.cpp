@@ -7,7 +7,11 @@
 #include <QTime>
 #include <QFileDialog>
 #include <QThread>
+#include <QMessageBox>
 #include <star.h>
+
+const int topX0 = 100, topY0 = 100, h = 800, length = 800;
+galaxy *galactika = new galaxy;
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
@@ -29,6 +33,32 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     ui->pushButtonStart->setText("Stop");
 
+    //график
+    // ui->widget->xAxis->setLabel("Масса в 1e23");
+    // ui->widget->yAxis->setLabel("Кол-во объектов");
+    // ui->widget->yAxis->setRange(0, numStars);
+    // ui->widget->xAxis->setRange(0, massUran / 1e24);
+
+    // double epsilon = 1e24;
+    // for(int i = 0; i < galactika->num; i++){
+    //     if(galactika->stars[i] != nullptr){
+    //         int count = 0;
+    //         for(int j = i + i; j < galactika->num; j++){
+    //             if((galactika->stars[j] != nullptr) && (abs(galactika->stars[i]->m - galactika->stars[j]->m) < epsilon)){
+    //                 count++;
+    //             }
+    //         }
+    //         x.push_back(galactika->stars[i]->m / 1e23);
+    //         y.push_back(count);
+    //     }
+    // }
+    // ui->widget->addGraph();
+    // ui->widget->graph(0)->addData(x,y);
+    // ui->widget->replot();
+
+    // ui->widget->setInteraction(QCP::iRangeZoom, true);
+    // ui->widget->setInteraction(QCP::iRangeDrag, true);
+
 }
 MainWindow::~MainWindow(){
     delete ui;
@@ -45,14 +75,46 @@ MainWindow::~MainWindow(){
     return;
 }*/
 
-const int topX0 = 100, topY0 = 100, h = 800, length = 800;
-galaxy *galactika = new galaxy;
+
 
 
 void MainWindow::TimerSlot()//таймер для отсчета системы
 {
     systemTtime++;
     ui->time_system->setText(QString::number(systemTtime));
+
+    //график
+
+    ui->widget->clearGraphs();
+    ui->widget->clearPlottables();
+    ui->widget->clearItems();
+    x.clear();
+    y.clear();
+
+    ui->widget->xAxis->setLabel("Масса в 1e23");
+    ui->widget->yAxis->setLabel("Кол-во объектов");
+    ui->widget->yAxis->setRange(0, numStars);
+    ui->widget->xAxis->setRange(0, massUran / 1e24);
+
+    double epsilon = 0.9e25;
+    for(int i = 0; i < galactika->num; i++){
+        if(galactika->stars[i] != nullptr){
+            int count = 0;
+            for(int j = i + i; j < galactika->num; j++){
+                if((galactika->stars[j] != nullptr) && (abs(galactika->stars[i]->m - galactika->stars[j]->m) < epsilon)){
+                    count++;
+                }
+            }
+            x.push_back(galactika->stars[i]->m / 1e23);
+            y.push_back(count);
+        }
+    }
+    ui->widget->addGraph();
+    ui->widget->graph(0)->addData(x,y);
+    ui->widget->replot();
+
+    ui->widget->setInteraction(QCP::iRangeZoom, true);
+    ui->widget->setInteraction(QCP::iRangeDrag, true);
 }
 
 void MainWindow::CalculateSlot()//отсчет шага системы
@@ -63,10 +125,10 @@ void MainWindow::CalculateSlot()//отсчет шага системы
     int intdex_Max_mass1 = 0;
     int intdex_Max_mass2 = 0;
     int intdex_Max_mass3 = 0;
-    double max_mass1 = -10;
-    double max_mass2 = -10;
-    double max_mass3 = -10;
-    double max_mass4 = -10;
+    double max_mass1 = 0;
+    double max_mass2 = 0;
+    double max_mass3 = 0;
+    double max_mass4 = 0;
     double p_res = 0, l_z = 0;
     for(int i = 0; i < galactika->num;i++){
         double p_x = 0, p_y = 0;
@@ -139,12 +201,20 @@ void MainWindow::CalculateSlot()//отсчет шага системы
     ui->obj2_corY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass2]->x[1]));
     ui->obj2_speedX_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass2]->v[0]));
     ui->obj2_speedY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass2]->v[1]));
-
-    ui->obj3_mass_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->m));
-    ui->obj3_corX_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->x[0]));
-    ui->obj3_corY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->x[1]));
-    ui->obj3_speedX_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->v[0]));
-    ui->obj3_speedY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->v[1]));
+    if(galactika->num > 2){
+        ui->obj3_mass_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->m));
+        ui->obj3_corX_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->x[0]));
+        ui->obj3_corY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->x[1]));
+        ui->obj3_speedX_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->v[0]));
+        ui->obj3_speedY_lineEdit->setText(QString::number(galactika->stars[intdex_Max_mass3]->v[1]));
+    }
+    else{
+        ui->obj3_mass_lineEdit->setText(QString::number(0));
+        ui->obj3_corX_lineEdit->setText(QString::number(0));
+        ui->obj3_corY_lineEdit->setText(QString::number(0));
+        ui->obj3_speedX_lineEdit->setText(QString::number(0));
+        ui->obj3_speedY_lineEdit->setText(QString::number(0));
+    }
 
     ui->impulse_lineEdit->setText(QString::number(p_res));
     ui->impuls_moment_lineEdit->setText(QString::number(l_z));
@@ -170,6 +240,21 @@ void MainWindow::paintEvent(QPaintEvent *e) {
 
   double coefX = length / 2 / 1e12; // system radius
   int centerX = length / 2;
+
+  if (galactika->num != numStars || ((secondsystemRadius != systemRadius) && (secondsystemRadius != 0))
+      || ((seconddistConnect != distConnect) && (seconddistConnect != 0))) {//
+
+      if(seconddistConnect != distConnect && seconddistConnect != 0) distConnect = seconddistConnect;
+
+      if(secondsystemRadius != systemRadius && secondsystemRadius != 0) systemRadius = secondsystemRadius;
+
+
+      // Автоматически обновляем количество звезд в галактике
+      galactika->resize();
+
+
+  }
+
   for(int i = 0; i < galactika->num; ++i){
       if(galactika->stars[i]){
           brush.setColor(galactika->stars[i]->col);
@@ -181,8 +266,8 @@ void MainWindow::paintEvent(QPaintEvent *e) {
                  galactika->stars[i]->x[0] * coefX + centerX  < length &&
                  galactika->stars[i]->x[1] * coefX + centerX + topY0 > 0 &&
                  galactika->stars[i]->x[1] * coefX + centerX  < h) */
-                    painter.drawEllipse(galactika->stars[i]->x[0] * coefX + centerX + topX0,//размер поля
-                                        galactika->stars[i]->x[1] * coefX + centerX + topY0,
+                    painter.drawEllipse(galactika->stars[i]->x[0] * coefX + centerX + topX0 - galactika->stars[i]->changing_size()/2,//размер поля
+                                        galactika->stars[i]->x[1] * coefX + centerX + topY0 - galactika->stars[i]->changing_size()/2,
                                  galactika->stars[i]->changing_size(), galactika->stars[i]->changing_size());//размер шариков
           }
       }
@@ -264,28 +349,36 @@ void MainWindow::on_load_Button_clicked()
     ifstream fin;
     fin.open("test.txt");//C:\Users\galeh\OneDrive\Desktop\proga\starsCreation\build\5_15_17_mingw64_static-Debug
 
-    string text;
-    double trash;
-    fin >> text;
-    fin >> numStars;
-    fin >> text;
-    fin >> star::starCounter;
-    fin>>text;
-    fin>>systemRadius;
-    fin>>text;
-    fin>>distConnect;
-
-    /*for(int j = 0; j < numStars; j++){
-        delete galactika->stars[j];
-        galactika->stars[j] = nullptr;
-    }*/
-
-    fin >> *galactika;
+    fin >> galactika;
     fin.close();
     QThread::sleep(5);
 
     timer->start(1);
     system_time->start(1000);
     calculate_time->start(1);
+}
+
+
+void MainWindow::on_num_obj_lineEdit_returnPressed()
+{
+    QString text = ui->num_obj_lineEdit->text();
+    numStars = text.toInt();
+}
+
+
+void MainWindow::on_size_obl_lineEdit_returnPressed()
+{
+    QString text = ui->size_obl_lineEdit->text();
+    secondsystemRadius = text.toDouble();
+
+}
+
+
+void MainWindow::on_dist_sum_lineEdit_returnPressed()
+{
+    QString text = ui->dist_sum_lineEdit->text();
+    seconddistConnect = text.toDouble();/*
+    QMessageBox::information(this, "Успех",
+                             QString("Вы ввели число: %1").arg(seconddistConnect));*/
 }
 
